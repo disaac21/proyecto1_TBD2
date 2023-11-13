@@ -1,6 +1,6 @@
 INSERT INTO Licencia (tipo_lic) VALUES ('A');
 
-INSERT INTO Licencia (tipo_lic) VALUES ('B');
+-- INSERT INTO Licencia (tipo_lic) VALUES ('B');
 
 -- Insert into Licencia
 INSERT INTO Licencia (tipo_lic) VALUES ('C');

@@ -67,6 +67,11 @@ CREATE TABLE Matricula (
 CREATE INDEX ON Matricula (dni_al);
 CREATE INDEX ON Matricula (tipo_lic, dni_prof);
 
+CREATE CUSTOM INDEX matricula_custom_index
+ON autoescuela_keyspace.Matricula (tipo_lic, dni_prof)
+USING 'org.apache.cassandra.index.sasi.SASIIndex';
+
+
 CREATE TABLE Prueba_Teorica (
     fecha_prueba date,
     n_matricula int,

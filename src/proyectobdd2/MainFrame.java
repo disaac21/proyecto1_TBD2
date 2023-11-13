@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package proyectobdd2;
+import proyectobdd2.InsertData;
 
 /**
  *
@@ -481,6 +482,7 @@ public class MainFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainFrame().setVisible(true);
+                InsertData.insertar();
             }
         });
     }
