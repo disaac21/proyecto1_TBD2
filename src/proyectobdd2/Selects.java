@@ -7,6 +7,10 @@ package proyectobdd2;
 import com.datastax.driver.core.BoundStatement;
 import com.datastax.driver.core.PreparedStatement;
 import com.datastax.driver.core.ResultSet;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
+import javax.swing.table.TableRowSorter;
 
 /**
  *
@@ -14,39 +18,86 @@ import com.datastax.driver.core.ResultSet;
  */
 public class Selects {
 
-    public static void selectProfesores() {
-        try {
-            DBConnector connector = new DBConnector();
-            connector.connectdb("localhost", 9042);
+    public static void selectProfesores(JTable listarProfesores) {
+        
+        //Captura Modelo
+    DefaultTableModel model = new DefaultTableModel();
+    TableRowSorter<TableModel> ordenar = new TableRowSorter<TableModel>(model);
+    listarProfesores.setRowSorter(ordenar);
 
-            final String selectQuery = "SELECT * FROM autoescuela_keyspace.Profesor";
+    //Agrega Columnas
+    model.addColumn("DNI Profesor"); model.addColumn("Nombre"); 
+    model.addColumn("Apellido 1");
+    model.addColumn("Apellido 2"); model.addColumn("Direccion");
+    model.addColumn("Telefono");
 
-            PreparedStatement psSelect = connector.getSession().prepare(selectQuery);
-            BoundStatement bsSelect = psSelect.bind();
-            ResultSet rs = connector.getSession().execute(bsSelect);
+    //Regresa Modelo
+    listarProfesores.setModel(model);
 
-            rs.forEach(rr -> {
-                System.out.println("------ Profesor ------");
-                System.out.println("dni_prof : " + rr.getInt("dni_prof"));
-                System.out.println("nombre : " + rr.getString("nombre"));
-                System.out.println("apellido_1 : " + rr.getString("apellido_1"));
-                System.out.println("apellido_2 : " + rr.getString("apellido_2"));
-                System.out.println("direccion : " + rr.getString("direccion"));
-                System.out.println("telefono : " + rr.getLong("telefono"));
-                System.out.println("");
-            });
+    //Llena Datos
+    String[] datos = new String[6];
 
-            connector.close();
+    try {
+        DBConnector connector = new DBConnector();
+        connector.connectdb("localhost", 9042);
 
-//            dni_prof int PRIMARY KEY,
-//            nombre text,
-//            apellido_1 text,
-//            apellido_2 text,
-//            direccion text,
-//            telefono bigint
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        final String selectQuery = "SELECT * FROM autoescuela_keyspace.Profesor";
+
+        PreparedStatement psSelect = connector.getSession().prepare(selectQuery);
+        BoundStatement bsSelect = psSelect.bind();
+        ResultSet rs = connector.getSession().execute(bsSelect);
+
+        rs.forEach(rr -> {
+            datos[0] = rr.getString("dni_prof");
+            datos[1] = rr.getString("nombre");
+            datos[2] = rr.getString("apellido_1");
+            datos[3] = rr.getString("apellido_2");
+            datos[4] = rr.getString("direccion");
+            datos[5] = rr.getString("telefono");
+
+            model.addRow(datos);
+        });
+
+        listarProfesores.setModel(model);
+
+        connector.close();
+
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+        
+//        try {
+//            DBConnector connector = new DBConnector();
+//            connector.connectdb("localhost", 9042);
+//
+//            final String selectQuery = "SELECT * FROM autoescuela_keyspace.Profesor";
+//
+//            PreparedStatement psSelect = connector.getSession().prepare(selectQuery);
+//            BoundStatement bsSelect = psSelect.bind();
+//            ResultSet rs = connector.getSession().execute(bsSelect);
+//
+//            rs.forEach(rr -> {
+//                System.out.println("------ Profesor ------");
+//                System.out.println("dni_prof : " + rr.getInt("dni_prof"));
+//                System.out.println("nombre : " + rr.getString("nombre"));
+//                System.out.println("apellido_1 : " + rr.getString("apellido_1"));
+//                System.out.println("apellido_2 : " + rr.getString("apellido_2"));
+//                System.out.println("direccion : " + rr.getString("direccion"));
+//                System.out.println("telefono : " + rr.getLong("telefono"));
+//                System.out.println("");
+//            });
+//
+//            connector.close();
+//
+////            dni_prof int PRIMARY KEY,
+////            nombre text,
+////            apellido_1 text,
+////            apellido_2 text,
+////            direccion text,
+////            telefono bigint
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 
     public static void selectDocencia() {
