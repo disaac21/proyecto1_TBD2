@@ -686,7 +686,11 @@ public class MainFrame extends javax.swing.JFrame {
 //                  DeleteData.deleteLicencia("Pesada");
 //                    DeleteData.deleteVehiculo("000006");
 //                    DeleteData.deleteProfesor(3);
-                    DeleteData.deleteAlumno(5);
+//                    DeleteData.deleteAlumno(5);
+                    
+//                    UpdateData.updateLicencia("C", "S");
+                    UpdateData.updateVehiculo("000001", "Porshe", "carrera", 321, "2030-11-11", 1000, "b", 1, "SPORT", "B");
+
 
             }
         });
