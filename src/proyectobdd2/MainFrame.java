@@ -201,9 +201,11 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jScrollPane8 = new javax.swing.JScrollPane();
         jTable5 = new javax.swing.JTable();
+        jButton11 = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
         jScrollPane9 = new javax.swing.JScrollPane();
         jTable6 = new javax.swing.JTable();
+        jButton12 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTable7 = new javax.swing.JTable();
@@ -348,6 +350,11 @@ public class MainFrame extends javax.swing.JFrame {
         jScrollPane13.setViewportView(jTable10);
 
         jButton4.setText("Ver Vehiculos");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -387,6 +394,11 @@ public class MainFrame extends javax.swing.JFrame {
         jScrollPane14.setViewportView(jTable11);
 
         jButton5.setText("Ver Vehiculos");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -1235,6 +1247,11 @@ public class MainFrame extends javax.swing.JFrame {
         jScrollPane11.setViewportView(jTable8);
 
         jButton6.setText("jButton6");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -1364,6 +1381,11 @@ public class MainFrame extends javax.swing.JFrame {
         jScrollPane12.setViewportView(jTable9);
 
         jButton8.setText("jButton8");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1448,6 +1470,11 @@ public class MainFrame extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTable4);
 
         jButton10.setText("Ver Matricula");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -1486,21 +1513,34 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane8.setViewportView(jTable5);
 
+        jButton11.setText("jButton11");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 577, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton11)))
                 .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton11)
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         MainTabbedPane3.addTab("6. Documento - Licencia", jPanel6);
@@ -1518,21 +1558,34 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane9.setViewportView(jTable6);
 
+        jButton12.setText("jButton12");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 577, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton12)))
                 .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton12)
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         MainTabbedPane3.addTab("7. Consumo de Vehículos", jPanel7);
@@ -1551,6 +1604,11 @@ public class MainFrame extends javax.swing.JFrame {
         jScrollPane10.setViewportView(jTable7);
 
         jButton9.setText("jButton9");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -1674,7 +1732,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        Selects.selectAlumnos(jTable1);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void matricularAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matricularAlumnoActionPerformed
@@ -1708,7 +1766,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
+        Selects.selectDocencia(jTable3);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void registrarVehiculo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarVehiculo4ActionPerformed
@@ -1776,6 +1834,38 @@ public class MainFrame extends javax.swing.JFrame {
         telefonoAlumno1.setText("");
         jTextField2.setText("");
     }//GEN-LAST:event_matricularAlumno1ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        Selects.selectLicencias(jTable8);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Selects.selectVehiculosTarifa(jTable10);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        Selects.selectVehiculosProfesor(jTable11);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        Selects.selectMatricula(jTable4);
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        Selects.selectDocLic(jTable5);
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        Selects.selectConsumo(jTable6);
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        Selects.selectPago(jTable7);
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        Selects.selectExamen(jTable9);
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1872,6 +1962,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTable eliminarVehiculo;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
