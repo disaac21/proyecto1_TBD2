@@ -165,7 +165,8 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         matricularAlumno1 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel15 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
         EliminarAlumnos = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
@@ -1053,8 +1054,13 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel13.setText("Tipo Licencia");
 
         matricularAlumno1.setText("Editar  Alumno");
+        matricularAlumno1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                matricularAlumno1ActionPerformed(evt);
+            }
+        });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jLabel15.setText("Coste Examen Teorico");
 
         javax.swing.GroupLayout EditarAlumnosLayout = new javax.swing.GroupLayout(EditarAlumnos);
         EditarAlumnos.setLayout(EditarAlumnosLayout);
@@ -1062,7 +1068,8 @@ public class MainFrame extends javax.swing.JFrame {
             EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EditarAlumnosLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(matricularAlumno1)
                     .addGroup(EditarAlumnosLayout.createSequentialGroup()
                         .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
@@ -1070,9 +1077,11 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(jLabel11)
                             .addComponent(jLabel12)
                             .addComponent(jLabel13)
-                            .addComponent(jLabel9))
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel15))
                         .addGap(44, 44, 44)
                         .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tipoLicencia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(EditarAlumnosLayout.createSequentialGroup()
                                 .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1082,17 +1091,13 @@ public class MainFrame extends javax.swing.JFrame {
                                     .addComponent(nombreAlumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(dniAlumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(apellidodosAlumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(matricularAlumno1)
-                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(317, Short.MAX_VALUE))
+                                .addComponent(apellidodosAlumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(270, Short.MAX_VALUE))
         );
         EditarAlumnosLayout.setVerticalGroup(
             EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(EditarAlumnosLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EditarAlumnosLayout.createSequentialGroup()
+                .addContainerGap(53, Short.MAX_VALUE)
                 .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(dniAlumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
@@ -1117,9 +1122,13 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tipoLicencia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel13))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
                 .addComponent(matricularAlumno1)
-                .addContainerGap())
+                .addGap(17, 17, 17))
         );
 
         AlumnosTabbedPane.addTab("Editar", EditarAlumnos);
@@ -1747,6 +1756,27 @@ public class MainFrame extends javax.swing.JFrame {
         telefonoProfesor1.setText("");
     }//GEN-LAST:event_registrarProfesor1ActionPerformed
 
+    private void matricularAlumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matricularAlumno1ActionPerformed
+        int dni_al = Integer.parseInt(dniAlumno1.getText());
+        String nombre = nombreAlumno1.getText();
+        String apellido_1 = apellidoAlumno1.getText();
+        String apellido_2 = apellidodosAlumno1.getText();
+        String direccion = direccionAlumno1.getText();
+        long telefono = Long.parseLong(telefonoAlumno1.getText());
+        String coste_et = jTextField2.getText();
+        String tipo_lic = tipoLicencia1.getItemAt(tipoLicencia1.getSelectedIndex());
+        
+        UpdateData.updateAlumno(dni_al, nombre, apellido_1, apellido_2, direccion, telefono, tipo_lic, coste_et);
+        
+        dniAlumno1.setText("");
+        nombreAlumno1.setText("");
+        apellidoAlumno1.setText("");
+        apellidodosAlumno1.setText("");
+        direccionAlumno1.setText("");
+        telefonoAlumno1.setText("");
+        jTextField2.setText("");
+    }//GEN-LAST:event_matricularAlumno1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1850,13 +1880,13 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -1934,6 +1964,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTable jTable8;
     private javax.swing.JTable jTable9;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTable listarProfesores;
     private javax.swing.JTextField llicencia_necesaria_vechiculo3;
     private javax.swing.JTextField marcaVehiculo3;
