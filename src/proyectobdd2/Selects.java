@@ -37,19 +37,18 @@ public class Selects {
             });
 
             connector.close();
-            
+
 //            dni_prof int PRIMARY KEY,
 //            nombre text,
 //            apellido_1 text,
 //            apellido_2 text,
 //            direccion text,
 //            telefono bigint
-
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    
+
     public static void selectDocencia() {
         try {
             DBConnector connector = new DBConnector();
@@ -70,8 +69,37 @@ public class Selects {
             });
 
             connector.close();
-            
-            
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void selectMatricula() {
+        try {
+            DBConnector connector = new DBConnector();
+            connector.connectdb("localhost", 9042);
+
+            final String selectQuery = "SELECT * FROM autoescuela_keyspace.Matricula";
+
+            PreparedStatement psSelect = connector.getSession().prepare(selectQuery);
+            BoundStatement bsSelect = psSelect.bind();
+            ResultSet rs = connector.getSession().execute(bsSelect);
+
+            rs.forEach(rr -> {
+                System.out.println("------ Matricula ------");
+                System.out.println("n_matricula : " + rr.getInt("n_matricula"));
+                System.out.println("doc_presente : " + rr.getString("doc_presente"));
+                System.out.println("dni_al : " + rr.getInt("dni_al"));
+                System.out.println("dni_prof : " + rr.getInt("dni_prof"));
+                System.out.println("tipo_lic : " + rr.getString("tipo_lic"));
+                System.out.println("coste_mat : " + rr.getString("coste_mat"));
+
+
+                System.out.println("");
+            });
+
+            connector.close();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -136,7 +164,7 @@ public class Selects {
             });
 
             connector.close();
-            
+
 //            dni_al int PRIMARY KEY,
 //            nombre text,
 //            apellido_1 text,
@@ -145,12 +173,11 @@ public class Selects {
 //            telefono bigint,
 //            tipo_lic text,
 //            coste_et text
-
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    
+
     public static void selectLicencias() {
         try {
             DBConnector connector = new DBConnector();
