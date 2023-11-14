@@ -1,0 +1,7 @@
+        dniProfesor.setText("");
+        nombreProfesor.setText("");
+        apellidoProfesor.setText("");
+        apellidodosProfesor.setText("");
+        direccionProfesor.setText("");
+        telefonoProfesor.setText("");
+        matriculaProfesor.setText("");

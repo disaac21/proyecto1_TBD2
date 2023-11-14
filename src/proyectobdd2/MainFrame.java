@@ -101,7 +101,7 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel69 = new javax.swing.JLabel();
         tipoLicencia2 = new javax.swing.JComboBox<>();
         jLabel70 = new javax.swing.JLabel();
-        telefonoProfesor2 = new javax.swing.JTextField();
+        matriculaProfesor = new javax.swing.JTextField();
         ListarProfesores = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         listarProfesores = new javax.swing.JTable();
@@ -555,6 +555,11 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel62.setText("Telefono");
 
         registrarProfesor.setText("Registrar Profesor");
+        registrarProfesor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registrarProfesorActionPerformed(evt);
+            }
+        });
 
         jLabel69.setText("Tipo Licencia");
 
@@ -593,7 +598,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addGroup(AgregarProfesoresLayout.createSequentialGroup()
                         .addComponent(jLabel70)
                         .addGap(44, 44, 44)
-                        .addComponent(telefonoProfesor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(matriculaProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(336, Short.MAX_VALUE))
         );
         AgregarProfesoresLayout.setVerticalGroup(
@@ -622,7 +627,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(jLabel62))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(telefonoProfesor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matriculaProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel70))
                 .addGap(10, 10, 10)
                 .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1455,9 +1460,9 @@ public class MainFrame extends javax.swing.JFrame {
         String tipo_lujo = tipolujoVehiculo3.getText();
         String licencia_necesaria = llicencia_necesaria_vechiculo3.getText();
         llicencia_necesaria_vechiculo3.setText("");
-        
+
         InsertData.insertarVehiculo(matricula, marca, modelo, cilindrada, anio_compra, tarifa, tipo_lic, dni_prof, tipo_lujo, licencia_necesaria);
-        
+
         matriculaVehiculo3.setText("");
         marcaVehiculo3.setText("");
         modeloVehiculo3.setText("");
@@ -1467,8 +1472,30 @@ public class MainFrame extends javax.swing.JFrame {
         dniprofesorVehiculo3.setText("");
         tipolujoVehiculo3.setText("");
         llicencia_necesaria_vechiculo3.setText("");
-        
+
     }//GEN-LAST:event_registrarVehiculo3ActionPerformed
+
+    private void registrarProfesorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarProfesorActionPerformed
+
+        int dni_prof = Integer.parseInt(dniProfesor.getText());
+        String nombre = nombreProfesor.getText();
+        String apellido_1 = apellidoProfesor.getText();
+        String apellido_2 = apellidodosProfesor.getText();
+        String direccion = direccionProfesor.getText();
+        long telefono = Long.parseLong(telefonoProfesor.getText());
+        String matricula = matriculaProfesor.getText();
+        String tipo_lic = tipoLicencia2.getItemAt(tipoLicencia2.getSelectedIndex());
+        
+        InsertData.insertarProfesor(dni_prof, nombre, apellido_1, apellido_2, direccion, telefono, tipo_lic, matricula);
+        
+        dniProfesor.setText("");
+        nombreProfesor.setText("");
+        apellidoProfesor.setText("");
+        apellidodosProfesor.setText("");
+        direccionProfesor.setText("");
+        telefonoProfesor.setText("");
+        matriculaProfesor.setText("");
+    }//GEN-LAST:event_registrarProfesorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1491,28 +1518,22 @@ public class MainFrame extends javax.swing.JFrame {
 //                InsertData.insertarVehiculo("000008", "Toyota", "Prado", 22100, "2003-11-11", 1000, "B", 2, "normal", "B");
 
 //                    Selects.selectDocencia();
-
 //                Selects.selectAlumnos();
 //                Selects.selectLicencias();
 //                Selects.selectProfesores();
-
 //                  DeleteData.deleteLicencia("Pesada");
 //                    DeleteData.deleteVehiculo("000009");
 //                    DeleteData.deleteProfesor(3);
 //                    DeleteData.deleteAlumno(5);
-                    
 //                    UpdateData.updateLicencia("C", "S");
 //                    UpdateData.updateVehiculo("000001", "Porshe", "carrera", 321, "2030-11-11", 1000, "b", 1, "SPORT", "B");
 //                    UpdateData.updateAlumno(11, "Isaac", "Juarez", "Funes", "Trapiche", 1, "A", null);
 //                    UpdateData.updateProfesor(10, "Anibal", "Aguilar", "Barahona", "Onieva 3", 10);
-
 //                    InsertData.insertarVehiculo("000009", "Ferrari", "Huracan", 9999, "2003-11-11", 1000, "B", 2, "Sport", "B");
 //                        Selects.ejercicio2();
 //                    InsertData.insertarVehiculo("000009", "Ferrari", "Huracan", 9999, "2003-11-11", 1000, "B", 2, "Sport", "B");
 //                    InsertData.insertarVehiculo("000006", "Honda", "Mrv", 500, "1995-02-05", 700, "A", 2, "Normal", "A");
 //                    InsertData.insertarVehiculo("000005", "Suzuki", "Mrz", 500, "1998-08-27", 700, "A", 1, "Exclusivo", "A");
-
-
             }
         });
     }
@@ -1653,6 +1674,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField llicencia_necesaria_vechiculo3;
     private javax.swing.JTextField marcaVehiculo3;
     private javax.swing.JTextField marcaVehiculo4;
+    private javax.swing.JTextField matriculaProfesor;
     private javax.swing.JTextField matriculaVehiculo3;
     private javax.swing.JTextField matriculaVehiculo4;
     private javax.swing.JButton matricularAlumno;
@@ -1673,7 +1695,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField telefonoAlumno1;
     private javax.swing.JTextField telefonoProfesor;
     private javax.swing.JTextField telefonoProfesor1;
-    private javax.swing.JTextField telefonoProfesor2;
     private javax.swing.JComboBox<String> tipoLicencia;
     private javax.swing.JComboBox<String> tipoLicencia1;
     private javax.swing.JComboBox<String> tipoLicencia2;
