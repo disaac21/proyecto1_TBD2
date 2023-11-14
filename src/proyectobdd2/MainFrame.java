@@ -98,6 +98,8 @@ public class MainFrame extends javax.swing.JFrame {
         registrarProfesor = new javax.swing.JButton();
         jLabel69 = new javax.swing.JLabel();
         tipoLicencia2 = new javax.swing.JComboBox<>();
+        jLabel70 = new javax.swing.JLabel();
+        telefonoProfesor2 = new javax.swing.JTextField();
         ListarProfesores = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         listarProfesores = new javax.swing.JTable();
@@ -156,6 +158,15 @@ public class MainFrame extends javax.swing.JFrame {
         EliminarAlumnos = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        jPanel9 = new javax.swing.JPanel();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel68 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jPanel11 = new javax.swing.JPanel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jTable8 = new javax.swing.JTable();
         ClasesTab = new javax.swing.JPanel();
         ClasesTabbedPane = new javax.swing.JTabbedPane();
         AgregarClases = new javax.swing.JPanel();
@@ -178,15 +189,6 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTable7 = new javax.swing.JTable();
-        jPanel9 = new javax.swing.JPanel();
-        jTabbedPane2 = new javax.swing.JTabbedPane();
-        jPanel10 = new javax.swing.JPanel();
-        jLabel68 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jPanel11 = new javax.swing.JPanel();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        jTable8 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -519,7 +521,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        MainTabbedPane3.addTab("Vehiculo", VehiculosTab3);
+        MainTabbedPane3.addTab("1. Vehiculo", VehiculosTab3);
 
         jLabel58.setText("DNI");
 
@@ -542,6 +544,8 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel69.setText("Tipo Licencia");
 
         tipoLicencia2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C" }));
+
+        jLabel70.setText("Matricula");
 
         javax.swing.GroupLayout AgregarProfesoresLayout = new javax.swing.GroupLayout(AgregarProfesores);
         AgregarProfesores.setLayout(AgregarProfesoresLayout);
@@ -566,13 +570,16 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(dniProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(apellidodosProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(registrarProfesor))
+                    .addComponent(registrarProfesor)
+                    .addGroup(AgregarProfesoresLayout.createSequentialGroup()
+                        .addComponent(jLabel69)
+                        .addGap(44, 44, 44)
+                        .addComponent(tipoLicencia2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(AgregarProfesoresLayout.createSequentialGroup()
+                        .addComponent(jLabel70)
+                        .addGap(44, 44, 44)
+                        .addComponent(telefonoProfesor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(336, Short.MAX_VALUE))
-            .addGroup(AgregarProfesoresLayout.createSequentialGroup()
-                .addComponent(jLabel69)
-                .addGap(44, 44, 44)
-                .addComponent(tipoLicencia2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         AgregarProfesoresLayout.setVerticalGroup(
             AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -598,11 +605,15 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(telefonoProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel62))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(telefonoProfesor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel70))
+                .addGap(10, 10, 10)
                 .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tipoLicencia2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel69))
-                .addGap(60, 60, 60)
+                .addGap(34, 34, 34)
                 .addComponent(registrarProfesor)
                 .addContainerGap(52, Short.MAX_VALUE))
         );
@@ -765,7 +776,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        MainTabbedPane3.addTab("Profesores", ProfesoresTab);
+        MainTabbedPane3.addTab("1. Profesores", ProfesoresTab);
 
         apellidoAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1027,7 +1038,90 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        MainTabbedPane3.addTab("Alumnos", AlumnosTab);
+        MainTabbedPane3.addTab("1. Alumnos", AlumnosTab);
+
+        jLabel68.setText("Tipo");
+
+        jButton1.setText("Crear Licencia");
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addComponent(jLabel68)
+                        .addGap(32, 32, 32)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(436, Short.MAX_VALUE))
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel68)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addComponent(jButton1)
+                .addContainerGap(234, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Crear Licencia", jPanel10);
+
+        jTable8.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane11.setViewportView(jTable8);
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(101, 101, 101)
+                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(121, Short.MAX_VALUE))
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(78, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Listar Licencias", jPanel11);
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane2)
+                .addContainerGap())
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane2)
+                .addContainerGap())
+        );
+
+        MainTabbedPane3.addTab("1. Licencia", jPanel9);
 
         javax.swing.GroupLayout AgregarClasesLayout = new javax.swing.GroupLayout(AgregarClases);
         AgregarClases.setLayout(AgregarClasesLayout);
@@ -1272,89 +1366,6 @@ public class MainFrame extends javax.swing.JFrame {
 
         MainTabbedPane3.addTab("Pagos", jPanel8);
 
-        jLabel68.setText("Tipo");
-
-        jButton1.setText("Crear Licencia");
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addComponent(jLabel68)
-                        .addGap(32, 32, 32)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(436, Short.MAX_VALUE))
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel68)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addComponent(jButton1)
-                .addContainerGap(234, Short.MAX_VALUE))
-        );
-
-        jTabbedPane2.addTab("Crear Licencia", jPanel10);
-
-        jTable8.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane11.setViewportView(jTable8);
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(121, Short.MAX_VALUE))
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(78, Short.MAX_VALUE))
-        );
-
-        jTabbedPane2.addTab("Listar Licencias", jPanel11);
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane2)
-                .addContainerGap())
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane2)
-                .addContainerGap())
-        );
-
-        MainTabbedPane3.addTab("Licencia", jPanel9);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -1531,6 +1542,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
+    private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -1589,6 +1601,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField telefonoAlumno1;
     private javax.swing.JTextField telefonoProfesor;
     private javax.swing.JTextField telefonoProfesor1;
+    private javax.swing.JTextField telefonoProfesor2;
     private javax.swing.JComboBox<String> tipoLicencia;
     private javax.swing.JComboBox<String> tipoLicencia1;
     private javax.swing.JComboBox<String> tipoLicencia2;
