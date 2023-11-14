@@ -669,19 +669,24 @@ public class MainFrame extends javax.swing.JFrame {
             System.out.println("failed to initialized");
         }
 
-        /* Create and display the form */
+        /* Createsss and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainFrame().setVisible(true);
 //                InsertData.insertarLicencia("Pesada");
 //                InsertData.insertarAlumno(11, "Daniel", "Juarez", "Funes", "Trapiche", 1, "A", null);
 //                InsertData.insertarProfesor(10, "Anibal", "Aguilar", "Perez", "Onieva 3", 10);
-                Selects.selectVehiculos();
-                InsertData.insertarVehiculo("000008", "Toyota", "Prado", 22100, "2003-11-11", 1000, "B", 2, "normal", "B");
+//                Selects.selectVehiculos();
+//                InsertData.insertarVehiculo("000008", "Toyota", "Prado", 22100, "2003-11-11", 1000, "B", 2, "normal", "B");
 
 //                Selects.selectAlumnos();
 //                Selects.selectLicencias();
 //                Selects.selectProfesores();
+
+//                  DeleteData.deleteLicencia("Pesada");
+//                    DeleteData.deleteVehiculo("000006");
+//                    DeleteData.deleteProfesor(3);
+                    DeleteData.deleteAlumno(5);
 
             }
         });
