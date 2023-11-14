@@ -105,6 +105,7 @@ public class MainFrame extends javax.swing.JFrame {
         ListarProfesores = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         listarProfesores = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
         EditarProfesores = new javax.swing.JPanel();
         jLabel63 = new javax.swing.JLabel();
         dniProfesor1 = new javax.swing.JTextField();
@@ -653,21 +654,34 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane5.setViewportView(listarProfesores);
 
+        jButton2.setText("jButton2");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ListarProfesoresLayout = new javax.swing.GroupLayout(ListarProfesores);
         ListarProfesores.setLayout(ListarProfesoresLayout);
         ListarProfesoresLayout.setHorizontalGroup(
             ListarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ListarProfesoresLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
+                .addGroup(ListarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ListarProfesoresLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton2)))
                 .addContainerGap())
         );
         ListarProfesoresLayout.setVerticalGroup(
             ListarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ListarProfesoresLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addContainerGap())
         );
 
         ProfesoresTabbedPane.addTab("Listar", ListarProfesores);
@@ -1497,6 +1511,10 @@ public class MainFrame extends javax.swing.JFrame {
         matriculaProfesor.setText("");
     }//GEN-LAST:event_registrarProfesorActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Selects.selectProfesores(listarProfesores);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1590,6 +1608,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTable eliminarProfesores;
     private javax.swing.JTable eliminarVehiculo;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
