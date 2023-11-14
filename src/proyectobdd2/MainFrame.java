@@ -1430,7 +1430,7 @@ public class MainFrame extends javax.swing.JFrame {
 //                Selects.selectVehiculos();
 //                InsertData.insertarVehiculo("000008", "Toyota", "Prado", 22100, "2003-11-11", 1000, "B", 2, "normal", "B");
 
-                    Selects.selectDocencia();
+//                    Selects.selectDocencia();
 
 //                Selects.selectAlumnos();
 //                Selects.selectLicencias();
