@@ -562,4 +562,64 @@ public class Selects {
         }
     }
 
+    
+    
+    //Show Vehiculos
+    public static void selectVehiculosFull(JTable eliminarVehiculo) {
+
+        //Captura Modelo
+        DefaultTableModel model = new DefaultTableModel();
+        TableRowSorter<TableModel> ordenar = new TableRowSorter<TableModel>(model);
+        eliminarVehiculo.setRowSorter(ordenar);
+
+        //Agrega Columnas
+        model.addColumn("Matricula");
+        model.addColumn("Marca");
+        model.addColumn("Modelo");
+        model.addColumn("Cilindrada");
+        model.addColumn("Anio Compra");
+        model.addColumn("Tarifa");
+        model.addColumn("Tipo Licencia");
+        model.addColumn("DNI Profesor");
+        model.addColumn("Tipo de Lujo");
+
+        //Regresa Modelo
+        eliminarVehiculo.setModel(model);
+
+        //Llena Datos
+        String[] datos = new String[6];
+
+        try {
+            DBConnector connector = new DBConnector();
+            connector.connectdb("localhost", 9042);
+
+            final String selectQuery = "SELECT * FROM autoescuela_keyspace.VehiculoByTipoLicTarifa";
+
+            PreparedStatement psSelect = connector.getSession().prepare(selectQuery);
+            BoundStatement bsSelect = psSelect.bind();
+            ResultSet rs = connector.getSession().execute(bsSelect);
+
+            rs.forEach(rr -> {
+                datos[2] = rr.getString("matricula");
+                datos[3] = rr.getString("marca");
+                datos[4] = rr.getString("modelo");
+                datos[4] = rr.getInt("cilindrada") + "";
+                datos[4] = rr.getDate("anio_compra") + "";
+                datos[4] = rr.getInt("tarifa") + "";
+                datos[0] = rr.getString("tipo_lic");
+                datos[1] = rr.getInt("dni_prof") + "";
+                datos[5] = rr.getString("tipo_lujo");
+
+                model.addRow(datos);
+            });
+
+            eliminarVehiculo.setModel(model);
+
+            connector.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 }
