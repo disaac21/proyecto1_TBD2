@@ -96,6 +96,8 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel62 = new javax.swing.JLabel();
         telefonoProfesor = new javax.swing.JTextField();
         registrarProfesor = new javax.swing.JButton();
+        jLabel69 = new javax.swing.JLabel();
+        tipoLicencia2 = new javax.swing.JComboBox<>();
         ListarProfesores = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         listarProfesores = new javax.swing.JTable();
@@ -537,6 +539,10 @@ public class MainFrame extends javax.swing.JFrame {
 
         registrarProfesor.setText("Registrar Profesor");
 
+        jLabel69.setText("Tipo Licencia");
+
+        tipoLicencia2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C" }));
+
         javax.swing.GroupLayout AgregarProfesoresLayout = new javax.swing.GroupLayout(AgregarProfesores);
         AgregarProfesores.setLayout(AgregarProfesoresLayout);
         AgregarProfesoresLayout.setHorizontalGroup(
@@ -562,6 +568,11 @@ public class MainFrame extends javax.swing.JFrame {
                         .addComponent(apellidodosProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(registrarProfesor))
                 .addContainerGap(336, Short.MAX_VALUE))
+            .addGroup(AgregarProfesoresLayout.createSequentialGroup()
+                .addComponent(jLabel69)
+                .addGap(44, 44, 44)
+                .addComponent(tipoLicencia2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         AgregarProfesoresLayout.setVerticalGroup(
             AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -587,7 +598,11 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(telefonoProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel62))
-                .addGap(100, 100, 100)
+                .addGap(18, 18, 18)
+                .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tipoLicencia2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel69))
+                .addGap(60, 60, 60)
                 .addComponent(registrarProfesor)
                 .addContainerGap(52, Short.MAX_VALUE))
         );
@@ -1427,9 +1442,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel AgregarAlumnos;
     private javax.swing.JPanel AgregarClases;
     private javax.swing.JPanel AgregarProfesores;
-    private javax.swing.JPanel AgregarVehiculo;
-    private javax.swing.JPanel AgregarVehiculo1;
-    private javax.swing.JPanel AgregarVehiculo2;
     private javax.swing.JPanel AgregarVehiculo3;
     private javax.swing.JPanel AlumnosTab;
     private javax.swing.JTabbedPane AlumnosTabbedPane;
@@ -1448,23 +1460,11 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel ListarClases;
     private javax.swing.JPanel ListarProfesores;
     private javax.swing.JPanel ListarVehiculo;
-    private javax.swing.JTabbedPane MainTabbedPane;
-    private javax.swing.JTabbedPane MainTabbedPane1;
-    private javax.swing.JTabbedPane MainTabbedPane2;
     private javax.swing.JTabbedPane MainTabbedPane3;
     private javax.swing.JPanel ProfesoresTab;
     private javax.swing.JTabbedPane ProfesoresTabbedPane;
-    private javax.swing.JTabbedPane VehiculoTabbedPane;
-    private javax.swing.JTabbedPane VehiculoTabbedPane1;
-    private javax.swing.JTabbedPane VehiculoTabbedPane2;
     private javax.swing.JTabbedPane VehiculoTabbedPane3;
-    private javax.swing.JPanel VehiculosTab;
-    private javax.swing.JPanel VehiculosTab1;
-    private javax.swing.JPanel VehiculosTab2;
     private javax.swing.JPanel VehiculosTab3;
-    private javax.swing.JTextField aniocompraVehiculo;
-    private javax.swing.JTextField aniocompraVehiculo1;
-    private javax.swing.JTextField aniocompraVehiculo2;
     private javax.swing.JTextField aniocompraVehiculo3;
     private javax.swing.JTextField aniocompraVehiculo4;
     private javax.swing.JTextField apellidoAlumno;
@@ -1475,9 +1475,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField apellidodosAlumno1;
     private javax.swing.JTextField apellidodosProfesor;
     private javax.swing.JTextField apellidodosProfesor1;
-    private javax.swing.JTextField cilindradaVehiculo;
-    private javax.swing.JTextField cilindradaVehiculo1;
-    private javax.swing.JTextField cilindradaVehiculo2;
     private javax.swing.JTextField cilindradaVehiculo3;
     private javax.swing.JTextField cilindradaVehiculo4;
     private javax.swing.JTextField direccionAlumno;
@@ -1488,9 +1485,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField dniAlumno1;
     private javax.swing.JTextField dniProfesor;
     private javax.swing.JTextField dniProfesor1;
-    private javax.swing.JTextField dniprofesorVehiculo;
-    private javax.swing.JTextField dniprofesorVehiculo1;
-    private javax.swing.JTextField dniprofesorVehiculo2;
     private javax.swing.JTextField dniprofesorVehiculo3;
     private javax.swing.JTextField dniprofesorVehiculo4;
     private javax.swing.JTable eliminarProfesores;
@@ -1502,34 +1496,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
@@ -1562,7 +1530,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -1599,21 +1567,12 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTable jTable8;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTable listarProfesores;
-    private javax.swing.JTextField marcaVehiculo;
-    private javax.swing.JTextField marcaVehiculo1;
-    private javax.swing.JTextField marcaVehiculo2;
     private javax.swing.JTextField marcaVehiculo3;
     private javax.swing.JTextField marcaVehiculo4;
-    private javax.swing.JTextField matriculaVehiculo;
-    private javax.swing.JTextField matriculaVehiculo1;
-    private javax.swing.JTextField matriculaVehiculo2;
     private javax.swing.JTextField matriculaVehiculo3;
     private javax.swing.JTextField matriculaVehiculo4;
     private javax.swing.JButton matricularAlumno;
     private javax.swing.JButton matricularAlumno1;
-    private javax.swing.JTextField modeloVehiculo;
-    private javax.swing.JTextField modeloVehiculo1;
-    private javax.swing.JTextField modeloVehiculo2;
     private javax.swing.JTextField modeloVehiculo3;
     private javax.swing.JTextField modeloVehiculo4;
     private javax.swing.JTextField nombreAlumno;
@@ -1622,14 +1581,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField nombreProfesor1;
     private javax.swing.JButton registrarProfesor;
     private javax.swing.JButton registrarProfesor1;
-    private javax.swing.JButton registrarVehiculo;
-    private javax.swing.JButton registrarVehiculo1;
-    private javax.swing.JButton registrarVehiculo2;
     private javax.swing.JButton registrarVehiculo3;
     private javax.swing.JButton registrarVehiculo4;
-    private javax.swing.JTextField tarifaVehiculo;
-    private javax.swing.JTextField tarifaVehiculo1;
-    private javax.swing.JTextField tarifaVehiculo2;
     private javax.swing.JTextField tarifaVehiculo3;
     private javax.swing.JTextField tarifaVehiculo4;
     private javax.swing.JTextField telefonoAlumno;
@@ -1638,14 +1591,9 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField telefonoProfesor1;
     private javax.swing.JComboBox<String> tipoLicencia;
     private javax.swing.JComboBox<String> tipoLicencia1;
-    private javax.swing.JComboBox<String> tipoLicenciaVehiculo;
-    private javax.swing.JComboBox<String> tipoLicenciaVehiculo1;
-    private javax.swing.JComboBox<String> tipoLicenciaVehiculo2;
+    private javax.swing.JComboBox<String> tipoLicencia2;
     private javax.swing.JComboBox<String> tipoLicenciaVehiculo3;
     private javax.swing.JComboBox<String> tipoLicenciaVehiculo4;
-    private javax.swing.JTextField tipolujoVehiculo;
-    private javax.swing.JTextField tipolujoVehiculo1;
-    private javax.swing.JTextField tipolujoVehiculo2;
     private javax.swing.JTextField tipolujoVehiculo3;
     private javax.swing.JTextField tipolujoVehiculo4;
     // End of variables declaration//GEN-END:variables
