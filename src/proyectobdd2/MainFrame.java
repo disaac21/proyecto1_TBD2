@@ -221,6 +221,11 @@ public class MainFrame extends javax.swing.JFrame {
         tipoLicenciaVehiculo3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C" }));
 
         registrarVehiculo3.setText("Registrar Vehículo");
+        registrarVehiculo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registrarVehiculo3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout AgregarVehiculo3Layout = new javax.swing.GroupLayout(AgregarVehiculo3);
         AgregarVehiculo3.setLayout(AgregarVehiculo3Layout);
@@ -1430,6 +1435,10 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_apellidoAlumno1ActionPerformed
 
+    private void registrarVehiculo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarVehiculo3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_registrarVehiculo3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1457,7 +1466,7 @@ public class MainFrame extends javax.swing.JFrame {
 //                Selects.selectProfesores();
 
 //                  DeleteData.deleteLicencia("Pesada");
-//                    DeleteData.deleteVehiculo("000006");
+//                    DeleteData.deleteVehiculo("000009");
 //                    DeleteData.deleteProfesor(3);
 //                    DeleteData.deleteAlumno(5);
                     
@@ -1465,6 +1474,9 @@ public class MainFrame extends javax.swing.JFrame {
 //                    UpdateData.updateVehiculo("000001", "Porshe", "carrera", 321, "2030-11-11", 1000, "b", 1, "SPORT", "B");
 //                    UpdateData.updateAlumno(11, "Isaac", "Juarez", "Funes", "Trapiche", 1, "A", null);
 //                    UpdateData.updateProfesor(10, "Anibal", "Aguilar", "Barahona", "Onieva 3", 10);
+
+//                    InsertData.insertarVehiculo("000009", "Ferrari", "Huracan", 9999, "2003-11-11", 1000, "B", 2, "Sport", "B");
+                        Selects.ejercicio2();
 
 
             }

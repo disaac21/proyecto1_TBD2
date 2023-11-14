@@ -105,6 +105,39 @@ public class Selects {
             e.printStackTrace();
         }
     }
+    
+    public static void ejercicio2(){
+        try {
+            DBConnector connector = new DBConnector();
+            connector.connectdb("localhost", 9042);
+
+            final String selectQuery = "SELECT * FROM autoescuela_keyspace.VehiculoByTipoLicTarifa;";
+
+            PreparedStatement psSelect = connector.getSession().prepare(selectQuery);
+            BoundStatement bsSelect = psSelect.bind();
+            ResultSet rs = connector.getSession().execute(bsSelect);
+
+            rs.forEach(rr -> {
+                System.out.println("------ Ejercicio 2 ------");
+                System.out.println("tipo_lic : " + rr.getString("tipo_lic"));
+                System.out.println("tarifa : " + rr.getInt("tarifa"));
+                System.out.println("matricula : " + rr.getString("matricula"));
+                System.out.println("anio_compra : " + rr.getDate("anio_compra"));
+                System.out.println("cilindrada : " + rr.getInt("cilindrada"));
+                System.out.println("dni_prof : " + rr.getInt("dni_prof"));
+                System.out.println("licencia_necesaria : " + rr.getString("licencia_necesaria"));
+                System.out.println("marca : " + rr.getString("marca"));
+                System.out.println("modelo : " + rr.getString("modelo"));
+                System.out.println("tipo_lujo : " + rr.getString("tipo_lujo"));
+                System.out.println("");
+            });
+
+            connector.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void selectVehiculos() {
         try {

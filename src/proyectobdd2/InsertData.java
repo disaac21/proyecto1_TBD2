@@ -49,7 +49,17 @@ public class InsertData {
                     dni_prof, tipo_lujo, licencia_necesaria);
 
             connector.getSession().execute(bsInsert);
+            connector.close();
+            
+            //-------------------------------------------------------------------------
+            
+            connector.connectdb("localhost", 9042);
+             insertarQuery = "INSERT INTO autoescuela_keyspace.VehiculoByTipoLicTarifa (matricula, marca, modelo, cilindrada, anio_compra, tarifa, tipo_lic, dni_prof, tipo_lujo, licencia_necesaria) VALUES (?,?,?,?,?,?,?,?,?,?);";
+             psInsert = connector.getSession().prepare(insertarQuery);
+             bsInsert = psInsert.bind(matricula, marca, modelo, cilindrada, currentDate, tarifa, tipo_lic,
+                    dni_prof, tipo_lujo, licencia_necesaria);
 
+            connector.getSession().execute(bsInsert);
             connector.close();
 
 //            System.out.println("SE PUDOOOOOOO!!!!!");
