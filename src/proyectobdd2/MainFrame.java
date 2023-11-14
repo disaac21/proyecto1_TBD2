@@ -1476,7 +1476,10 @@ public class MainFrame extends javax.swing.JFrame {
 //                    UpdateData.updateProfesor(10, "Anibal", "Aguilar", "Barahona", "Onieva 3", 10);
 
 //                    InsertData.insertarVehiculo("000009", "Ferrari", "Huracan", 9999, "2003-11-11", 1000, "B", 2, "Sport", "B");
-                        Selects.ejercicio2();
+//                        Selects.ejercicio2();
+//                    InsertData.insertarVehiculo("000009", "Ferrari", "Huracan", 9999, "2003-11-11", 1000, "B", 2, "Sport", "B");
+//                    InsertData.insertarVehiculo("000006", "Honda", "Mrv", 500, "1995-02-05", 700, "A", 2, "Normal", "A");
+//                    InsertData.insertarVehiculo("000005", "Suzuki", "Mrz", 500, "1998-08-27", 700, "A", 1, "Exclusivo", "A");
 
 
             }
