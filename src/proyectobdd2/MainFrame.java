@@ -46,6 +46,22 @@ public class MainFrame extends javax.swing.JFrame {
         AlumnosTab = new javax.swing.JPanel();
         AlumnosTabbedPane = new javax.swing.JTabbedPane();
         AgregarAlumnos = new javax.swing.JPanel();
+        dniAlumno = new javax.swing.JTextField();
+        nombreAlumno = new javax.swing.JTextField();
+        apellidoAlumno = new javax.swing.JTextField();
+        apellidodosAlumno = new javax.swing.JTextField();
+        direccionAlumno = new javax.swing.JTextField();
+        telefonoAlumno = new javax.swing.JTextField();
+        tipoLicencia = new javax.swing.JComboBox<>();
+        costoLicencia = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        matricularAlumno = new javax.swing.JButton();
         ListarAlumnos = new javax.swing.JPanel();
         EditarAlumnos = new javax.swing.JPanel();
         EliminarAlumnos = new javax.swing.JPanel();
@@ -207,15 +223,98 @@ public class MainFrame extends javax.swing.JFrame {
 
         MainTabbedPane.addTab("Profesores", ProfesoresTab);
 
+        apellidoAlumno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                apellidoAlumnoActionPerformed(evt);
+            }
+        });
+
+        tipoLicencia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel1.setText("DNI");
+
+        jLabel2.setText("Nombre");
+
+        jLabel3.setText("Apellidos");
+
+        jLabel4.setText("Dirección");
+
+        jLabel5.setText("Telefono");
+
+        jLabel6.setText("Tipo Licencia");
+
+        jLabel7.setText("Costo");
+
+        matricularAlumno.setText("Matricular Alumno");
+
         javax.swing.GroupLayout AgregarAlumnosLayout = new javax.swing.GroupLayout(AgregarAlumnos);
         AgregarAlumnos.setLayout(AgregarAlumnosLayout);
         AgregarAlumnosLayout.setHorizontalGroup(
             AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(AgregarAlumnosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AgregarAlumnosLayout.createSequentialGroup()
+                        .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel2))
+                        .addGap(44, 44, 44)
+                        .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(AgregarAlumnosLayout.createSequentialGroup()
+                                .addComponent(tipoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel7)
+                                .addGap(18, 18, 18)
+                                .addComponent(costoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(AgregarAlumnosLayout.createSequentialGroup()
+                                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(telefonoAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(direccionAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(apellidoAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(nombreAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(dniAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(apellidodosAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(matricularAlumno))
+                .addContainerGap(254, Short.MAX_VALUE))
         );
         AgregarAlumnosLayout.setVerticalGroup(
             AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(AgregarAlumnosLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(dniAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nombreAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(apellidoAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(apellidodosAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(direccionAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(telefonoAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addGap(18, 18, 18)
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tipoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(costoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addComponent(matricularAlumno)
+                .addContainerGap())
         );
 
         AlumnosTabbedPane.addTab("Agregar", AgregarAlumnos);
@@ -453,6 +552,10 @@ public class MainFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void apellidoAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apellidoAlumnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_apellidoAlumnoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -504,6 +607,22 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTabbedPane ProfesoresTabbedPane;
     private javax.swing.JTabbedPane VehiculoTabbedPane;
     private javax.swing.JPanel VehiculosTab;
+    private javax.swing.JTextField apellidoAlumno;
+    private javax.swing.JTextField apellidodosAlumno;
+    private javax.swing.JTextField costoLicencia;
+    private javax.swing.JTextField direccionAlumno;
+    private javax.swing.JTextField dniAlumno;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton matricularAlumno;
+    private javax.swing.JTextField nombreAlumno;
+    private javax.swing.JTextField telefonoAlumno;
+    private javax.swing.JComboBox<String> tipoLicencia;
     // End of variables declaration//GEN-END:variables
 }
