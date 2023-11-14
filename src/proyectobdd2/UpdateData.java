@@ -60,4 +60,42 @@ public class UpdateData {
             e.printStackTrace();
         }
     }
+    
+    public static void updateAlumno(int dni_al, String nombre, String apellido_1, String apellido_2, String direccion, long telefono, String tipo_lic, String coste_et) {
+        try {
+            DBConnector connector = new DBConnector();
+            connector.connectdb("localhost", 9042);
+
+            final String updateQuery = "UPDATE autoescuela_keyspace.Alumno SET nombre= ?, apellido_1= ?, apellido_2= ?, direccion= ?, telefono= ?, tipo_lic= ?, coste_et= ? WHERE "
+                    + "dni_al= ?;";
+
+            PreparedStatement psUpdate = connector.getSession().prepare(updateQuery);
+            BoundStatement bsUpdate = psUpdate.bind(nombre, apellido_1, apellido_2, direccion, telefono, tipo_lic, coste_et, dni_al);
+            connector.getSession().execute(bsUpdate);
+
+            connector.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public static void updateProfesor(int dni_prof, String nombre, String apellido_1, String apellido_2, String direccion, long telefono) {
+        try {
+            DBConnector connector = new DBConnector();
+            connector.connectdb("localhost", 9042);
+
+            final String updateQuery = "UPDATE autoescuela_keyspace.Profesor SET nombre= ?, apellido_1= ?, apellido_2= ?, direccion= ?, telefono= ? WHERE "
+                    + "dni_prof= ?;";
+
+            PreparedStatement psUpdate = connector.getSession().prepare(updateQuery);
+            BoundStatement bsUpdate = psUpdate.bind(   nombre,  apellido_1,  apellido_2,  direccion, telefono, dni_prof);
+            connector.getSession().execute(bsUpdate);
+
+            connector.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
