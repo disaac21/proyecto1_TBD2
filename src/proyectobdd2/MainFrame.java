@@ -151,6 +151,10 @@ public class MainFrame extends javax.swing.JFrame {
         matricularAlumno = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         coste_et = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        matricula_alumno = new javax.swing.JTextField();
+        dniprof_alumno = new javax.swing.JTextField();
         ListarAlumnos = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -942,6 +946,10 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel16.setText("Matricula");
+
+        jLabel17.setText("DNI Profesor");
+
         javax.swing.GroupLayout AgregarAlumnosLayout = new javax.swing.GroupLayout(AgregarAlumnos);
         AgregarAlumnos.setLayout(AgregarAlumnosLayout);
         AgregarAlumnosLayout.setHorizontalGroup(
@@ -958,9 +966,13 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(jLabel5)
                             .addComponent(jLabel6)
                             .addComponent(jLabel2)
-                            .addComponent(jLabel14))
+                            .addComponent(jLabel14)
+                            .addComponent(jLabel16)
+                            .addComponent(jLabel17))
                         .addGap(44, 44, 44)
                         .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(dniprof_alumno, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(matricula_alumno, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(coste_et, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tipoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(AgregarAlumnosLayout.createSequentialGroup()
@@ -1006,7 +1018,15 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(coste_et, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(matricula_alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(dniprof_alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                 .addComponent(matricularAlumno)
                 .addContainerGap())
         );
@@ -1857,8 +1877,11 @@ public class MainFrame extends javax.swing.JFrame {
         long telefono =  Long.parseLong(telefonoAlumno.getText());
         String coste = coste_et.getText();
         String tipo_lic = tipoLicencia.getItemAt(tipoLicencia.getSelectedIndex());
+        int matricula = Integer.parseInt(matricula_alumno.getText());
+        int dni_prof = Integer.parseInt(dniprof_alumno.getText());
         
-        InsertData.insertarAlumno(dni_al, nombre, apellido_1, apellido_2, direccion, telefono, tipo_lic, coste);
+        
+        InsertData.insertarAlumno(dni_al, nombre, apellido_1, apellido_2, direccion, telefono, tipo_lic, coste,  matricula,  true,  dni_prof);
         
         dniAlumno.setText("");
         nombreAlumno.setText("");
@@ -1867,6 +1890,8 @@ public class MainFrame extends javax.swing.JFrame {
         direccionAlumno.setText("");
         telefonoAlumno.setText("");
         coste_et.setText("");
+        matricula_alumno.setText("");
+        dniprof_alumno.setText("");
     }//GEN-LAST:event_matricularAlumnoActionPerformed
 
     private void coste_etActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coste_etActionPerformed
@@ -2110,6 +2135,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField dniAlumno1;
     private javax.swing.JTextField dniProfesor;
     private javax.swing.JTextField dniProfesor1;
+    private javax.swing.JTextField dniprof_alumno;
     private javax.swing.JTextField dniprofesorVehiculo3;
     private javax.swing.JTextField dniprofesorVehiculo4;
     private javax.swing.JTable eliminarProfesores;
@@ -2133,6 +2159,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -2223,6 +2251,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField matriculaProfesor;
     private javax.swing.JTextField matriculaVehiculo3;
     private javax.swing.JTextField matriculaVehiculo4;
+    private javax.swing.JTextField matricula_alumno;
     private javax.swing.JButton matricularAlumno;
     private javax.swing.JButton matricularAlumno1;
     private javax.swing.JTextField modeloVehiculo3;
