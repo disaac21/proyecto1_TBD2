@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 package proyectobdd2;
+
 import javax.swing.UIManager;
 import com.formdev.flatlaf.FlatLightLaf;
-
 
 /**
  *
@@ -664,7 +664,7 @@ public class MainFrame extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         try {
-            UIManager.setLookAndFeel( new FlatLightLaf() );
+            UIManager.setLookAndFeel(new FlatLightLaf());
         } catch (Exception e) {
             System.out.println("failed to initialized");
         }
@@ -674,7 +674,11 @@ public class MainFrame extends javax.swing.JFrame {
             public void run() {
                 new MainFrame().setVisible(true);
 //                InsertData.insertar();
-//                  Selects.selectVehiculos();
+                Selects.selectVehiculos();
+                Selects.selectAlumnos();
+                Selects.selectLicencias();
+                Selects.selectProfesores();
+
             }
         });
     }
