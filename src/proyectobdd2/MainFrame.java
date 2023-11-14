@@ -30,19 +30,91 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        MainTabbedPane = new javax.swing.JTabbedPane();
-        VehiculosTab = new javax.swing.JPanel();
-        VehiculoTabbedPane = new javax.swing.JTabbedPane();
-        AgregarVehiculo = new javax.swing.JPanel();
+        MainTabbedPane3 = new javax.swing.JTabbedPane();
+        VehiculosTab3 = new javax.swing.JPanel();
+        VehiculoTabbedPane3 = new javax.swing.JTabbedPane();
+        AgregarVehiculo3 = new javax.swing.JPanel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        aniocompraVehiculo3 = new javax.swing.JTextField();
+        tarifaVehiculo3 = new javax.swing.JTextField();
+        cilindradaVehiculo3 = new javax.swing.JTextField();
+        modeloVehiculo3 = new javax.swing.JTextField();
+        marcaVehiculo3 = new javax.swing.JTextField();
+        matriculaVehiculo3 = new javax.swing.JTextField();
+        dniprofesorVehiculo3 = new javax.swing.JTextField();
+        tipolujoVehiculo3 = new javax.swing.JTextField();
+        tipoLicenciaVehiculo3 = new javax.swing.JComboBox<>();
+        registrarVehiculo3 = new javax.swing.JButton();
         ListarVehiculo = new javax.swing.JPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         EditarVehiculo = new javax.swing.JPanel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        aniocompraVehiculo4 = new javax.swing.JTextField();
+        tarifaVehiculo4 = new javax.swing.JTextField();
+        cilindradaVehiculo4 = new javax.swing.JTextField();
+        modeloVehiculo4 = new javax.swing.JTextField();
+        marcaVehiculo4 = new javax.swing.JTextField();
+        matriculaVehiculo4 = new javax.swing.JTextField();
+        dniprofesorVehiculo4 = new javax.swing.JTextField();
+        tipolujoVehiculo4 = new javax.swing.JTextField();
+        tipoLicenciaVehiculo4 = new javax.swing.JComboBox<>();
+        registrarVehiculo4 = new javax.swing.JButton();
         EliminarVehiculo = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        eliminarVehiculo = new javax.swing.JTable();
         ProfesoresTab = new javax.swing.JPanel();
         ProfesoresTabbedPane = new javax.swing.JTabbedPane();
         AgregarProfesores = new javax.swing.JPanel();
+        jLabel58 = new javax.swing.JLabel();
+        dniProfesor = new javax.swing.JTextField();
+        jLabel59 = new javax.swing.JLabel();
+        nombreProfesor = new javax.swing.JTextField();
+        jLabel60 = new javax.swing.JLabel();
+        apellidoProfesor = new javax.swing.JTextField();
+        apellidodosProfesor = new javax.swing.JTextField();
+        jLabel61 = new javax.swing.JLabel();
+        direccionProfesor = new javax.swing.JTextField();
+        jLabel62 = new javax.swing.JLabel();
+        telefonoProfesor = new javax.swing.JTextField();
+        registrarProfesor = new javax.swing.JButton();
         ListarProfesores = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        listarProfesores = new javax.swing.JTable();
         EditarProfesores = new javax.swing.JPanel();
+        jLabel63 = new javax.swing.JLabel();
+        dniProfesor1 = new javax.swing.JTextField();
+        jLabel64 = new javax.swing.JLabel();
+        nombreProfesor1 = new javax.swing.JTextField();
+        jLabel65 = new javax.swing.JLabel();
+        apellidoProfesor1 = new javax.swing.JTextField();
+        apellidodosProfesor1 = new javax.swing.JTextField();
+        jLabel66 = new javax.swing.JLabel();
+        direccionProfesor1 = new javax.swing.JTextField();
+        jLabel67 = new javax.swing.JLabel();
+        telefonoProfesor1 = new javax.swing.JTextField();
+        registrarProfesor1 = new javax.swing.JButton();
         EliminarProfesores = new javax.swing.JPanel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        eliminarProfesores = new javax.swing.JTable();
         AlumnosTab = new javax.swing.JPanel();
         AlumnosTabbedPane = new javax.swing.JTabbedPane();
         AgregarAlumnos = new javax.swing.JPanel();
@@ -53,16 +125,16 @@ public class MainFrame extends javax.swing.JFrame {
         direccionAlumno = new javax.swing.JTextField();
         telefonoAlumno = new javax.swing.JTextField();
         tipoLicencia = new javax.swing.JComboBox<>();
-        costoLicencia = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         matricularAlumno = new javax.swing.JButton();
         ListarAlumnos = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         EditarAlumnos = new javax.swing.JPanel();
         dniAlumno1 = new javax.swing.JTextField();
         nombreAlumno1 = new javax.swing.JTextField();
@@ -71,22 +143,17 @@ public class MainFrame extends javax.swing.JFrame {
         direccionAlumno1 = new javax.swing.JTextField();
         telefonoAlumno1 = new javax.swing.JTextField();
         tipoLicencia1 = new javax.swing.JComboBox<>();
-        costoLicencia1 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         matricularAlumno1 = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
         EliminarAlumnos = new javax.swing.JPanel();
-        LicenciaTab = new javax.swing.JPanel();
-        LicenciaTabbedPane = new javax.swing.JTabbedPane();
-        AgregarLicencia = new javax.swing.JPanel();
-        ListarLicencia = new javax.swing.JPanel();
-        EditarLicencia = new javax.swing.JPanel();
-        EliminarLicencia = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
         ClasesTab = new javax.swing.JPanel();
         ClasesTabbedPane = new javax.swing.JTabbedPane();
         AgregarClases = new javax.swing.JPanel();
@@ -94,128 +161,574 @@ public class MainFrame extends javax.swing.JFrame {
         EditarClases = new javax.swing.JPanel();
         EliminarClases = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
+        DocenciaTab = new javax.swing.JPanel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        jPanel5 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
+        jPanel6 = new javax.swing.JPanel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        jPanel7 = new javax.swing.JPanel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTable6 = new javax.swing.JTable();
+        jPanel8 = new javax.swing.JPanel();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jTable7 = new javax.swing.JTable();
+        jPanel9 = new javax.swing.JPanel();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel68 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jPanel11 = new javax.swing.JPanel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jTable8 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        javax.swing.GroupLayout AgregarVehiculoLayout = new javax.swing.GroupLayout(AgregarVehiculo);
-        AgregarVehiculo.setLayout(AgregarVehiculoLayout);
-        AgregarVehiculoLayout.setHorizontalGroup(
-            AgregarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jLabel40.setText("Matricula");
+
+        jLabel41.setText("Marca");
+
+        jLabel42.setText("Modelo");
+
+        jLabel43.setText("Cilindrada");
+
+        jLabel44.setText("Año Compra");
+
+        jLabel45.setText("Tarifa");
+
+        jLabel46.setText("Tipo Licencia");
+
+        jLabel47.setText("DNI Profesor");
+
+        jLabel48.setText("Tipo Lujo");
+
+        modeloVehiculo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modeloVehiculo3ActionPerformed(evt);
+            }
+        });
+
+        tipoLicenciaVehiculo3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C" }));
+
+        registrarVehiculo3.setText("Registrar Vehículo");
+
+        javax.swing.GroupLayout AgregarVehiculo3Layout = new javax.swing.GroupLayout(AgregarVehiculo3);
+        AgregarVehiculo3.setLayout(AgregarVehiculo3Layout);
+        AgregarVehiculo3Layout.setHorizontalGroup(
+            AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AgregarVehiculo3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel46)
+                    .addComponent(jLabel45)
+                    .addComponent(jLabel44)
+                    .addComponent(jLabel43)
+                    .addComponent(jLabel40)
+                    .addComponent(jLabel42)
+                    .addComponent(jLabel41))
+                .addGap(18, 18, 18)
+                .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AgregarVehiculo3Layout.createSequentialGroup()
+                        .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(cilindradaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(tarifaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(aniocompraVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(modeloVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(marcaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(matriculaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
+                        .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel47)
+                            .addComponent(jLabel48))
+                        .addGap(18, 18, 18)
+                        .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(dniprofesorVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tipolujoVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(127, 127, 127))
+                    .addGroup(AgregarVehiculo3Layout.createSequentialGroup()
+                        .addComponent(tipoLicenciaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AgregarVehiculo3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(registrarVehiculo3)
+                .addContainerGap())
+        );
+        AgregarVehiculo3Layout.setVerticalGroup(
+            AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AgregarVehiculo3Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel40)
+                    .addComponent(jLabel47)
+                    .addComponent(matriculaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dniprofesorVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel41)
+                    .addComponent(jLabel48)
+                    .addComponent(marcaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tipolujoVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel42)
+                    .addComponent(modeloVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel43)
+                    .addComponent(cilindradaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel44)
+                    .addComponent(aniocompraVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel45)
+                    .addComponent(tarifaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel46)
+                    .addComponent(tipoLicenciaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(registrarVehiculo3)
+                .addContainerGap(7, Short.MAX_VALUE))
+        );
+
+        VehiculoTabbedPane3.addTab("Agregar", AgregarVehiculo3);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-        AgregarVehiculoLayout.setVerticalGroup(
-            AgregarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        VehiculoTabbedPane.addTab("Agregar", AgregarVehiculo);
+        jTabbedPane1.addTab("Tipo de Licencia", jPanel2);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Tarifa", jPanel3);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Por Profesor", jPanel4);
 
         javax.swing.GroupLayout ListarVehiculoLayout = new javax.swing.GroupLayout(ListarVehiculo);
         ListarVehiculo.setLayout(ListarVehiculoLayout);
         ListarVehiculoLayout.setHorizontalGroup(
             ListarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(ListarVehiculoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE))
         );
         ListarVehiculoLayout.setVerticalGroup(
             ListarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(ListarVehiculoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE))
         );
 
-        VehiculoTabbedPane.addTab("Listar", ListarVehiculo);
+        VehiculoTabbedPane3.addTab("Listar", ListarVehiculo);
+
+        jLabel49.setText("Matricula");
+
+        jLabel50.setText("Marca");
+
+        jLabel51.setText("Modelo");
+
+        jLabel52.setText("Cilindrada");
+
+        jLabel53.setText("Año Compra");
+
+        jLabel54.setText("Tarifa");
+
+        jLabel55.setText("Tipo Licencia");
+
+        jLabel56.setText("DNI Profesor");
+
+        jLabel57.setText("Tipo Lujo");
+
+        modeloVehiculo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modeloVehiculo4ActionPerformed(evt);
+            }
+        });
+
+        tipoLicenciaVehiculo4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C" }));
+
+        registrarVehiculo4.setText("Editar Vehículo");
 
         javax.swing.GroupLayout EditarVehiculoLayout = new javax.swing.GroupLayout(EditarVehiculo);
         EditarVehiculo.setLayout(EditarVehiculoLayout);
         EditarVehiculoLayout.setHorizontalGroup(
             EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EditarVehiculoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel55)
+                    .addComponent(jLabel54)
+                    .addComponent(jLabel53)
+                    .addComponent(jLabel52)
+                    .addComponent(jLabel49)
+                    .addComponent(jLabel51)
+                    .addComponent(jLabel50))
+                .addGap(18, 18, 18)
+                .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(EditarVehiculoLayout.createSequentialGroup()
+                        .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(cilindradaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(tarifaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(aniocompraVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(modeloVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(marcaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(matriculaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
+                        .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel56)
+                            .addComponent(jLabel57))
+                        .addGap(18, 18, 18)
+                        .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(dniprofesorVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tipolujoVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(127, 127, 127))
+                    .addGroup(EditarVehiculoLayout.createSequentialGroup()
+                        .addComponent(tipoLicenciaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EditarVehiculoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(registrarVehiculo4)
+                .addContainerGap())
         );
         EditarVehiculoLayout.setVerticalGroup(
             EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EditarVehiculoLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel49)
+                    .addComponent(jLabel56)
+                    .addComponent(matriculaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dniprofesorVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel50)
+                    .addComponent(jLabel57)
+                    .addComponent(marcaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tipolujoVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel51)
+                    .addComponent(modeloVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel52)
+                    .addComponent(cilindradaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel53)
+                    .addComponent(aniocompraVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel54)
+                    .addComponent(tarifaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(EditarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel55)
+                    .addComponent(tipoLicenciaVehiculo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(registrarVehiculo4)
+                .addContainerGap(7, Short.MAX_VALUE))
         );
 
-        VehiculoTabbedPane.addTab("Editar", EditarVehiculo);
+        VehiculoTabbedPane3.addTab("Editar", EditarVehiculo);
+
+        eliminarVehiculo.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane4.setViewportView(eliminarVehiculo);
 
         javax.swing.GroupLayout EliminarVehiculoLayout = new javax.swing.GroupLayout(EliminarVehiculo);
         EliminarVehiculo.setLayout(EliminarVehiculoLayout);
         EliminarVehiculoLayout.setHorizontalGroup(
             EliminarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EliminarVehiculoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addContainerGap())
         );
         EliminarVehiculoLayout.setVerticalGroup(
             EliminarVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EliminarVehiculoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        VehiculoTabbedPane.addTab("Eliminar", EliminarVehiculo);
+        VehiculoTabbedPane3.addTab("Eliminar", EliminarVehiculo);
 
-        javax.swing.GroupLayout VehiculosTabLayout = new javax.swing.GroupLayout(VehiculosTab);
-        VehiculosTab.setLayout(VehiculosTabLayout);
-        VehiculosTabLayout.setHorizontalGroup(
-            VehiculosTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(VehiculosTabLayout.createSequentialGroup()
+        javax.swing.GroupLayout VehiculosTab3Layout = new javax.swing.GroupLayout(VehiculosTab3);
+        VehiculosTab3.setLayout(VehiculosTab3Layout);
+        VehiculosTab3Layout.setHorizontalGroup(
+            VehiculosTab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VehiculosTab3Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(VehiculoTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(VehiculoTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        VehiculosTabLayout.setVerticalGroup(
-            VehiculosTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(VehiculosTabLayout.createSequentialGroup()
+        VehiculosTab3Layout.setVerticalGroup(
+            VehiculosTab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VehiculosTab3Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(VehiculoTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(VehiculoTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        MainTabbedPane.addTab("Vehiculo", VehiculosTab);
+        MainTabbedPane3.addTab("Vehiculo", VehiculosTab3);
+
+        jLabel58.setText("DNI");
+
+        jLabel59.setText("Nombre");
+
+        jLabel60.setText("Apellidos");
+
+        apellidoProfesor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                apellidoProfesorActionPerformed(evt);
+            }
+        });
+
+        jLabel61.setText("Dirección");
+
+        jLabel62.setText("Telefono");
+
+        registrarProfesor.setText("Registrar Profesor");
 
         javax.swing.GroupLayout AgregarProfesoresLayout = new javax.swing.GroupLayout(AgregarProfesores);
         AgregarProfesores.setLayout(AgregarProfesoresLayout);
         AgregarProfesoresLayout.setHorizontalGroup(
             AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(AgregarProfesoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AgregarProfesoresLayout.createSequentialGroup()
+                        .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel58)
+                            .addComponent(jLabel60)
+                            .addComponent(jLabel61)
+                            .addComponent(jLabel62)
+                            .addComponent(jLabel59))
+                        .addGap(44, 44, 44)
+                        .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(telefonoProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(direccionProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(apellidoProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombreProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dniProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(apellidodosProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(registrarProfesor))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
         AgregarProfesoresLayout.setVerticalGroup(
             AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(AgregarProfesoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(dniProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel58))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nombreProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel59))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(apellidoProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(apellidodosProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel60))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(direccionProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel61))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AgregarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(telefonoProfesor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel62))
+                .addGap(100, 100, 100)
+                .addComponent(registrarProfesor)
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         ProfesoresTabbedPane.addTab("Agregar", AgregarProfesores);
+
+        listarProfesores.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane5.setViewportView(listarProfesores);
 
         javax.swing.GroupLayout ListarProfesoresLayout = new javax.swing.GroupLayout(ListarProfesores);
         ListarProfesores.setLayout(ListarProfesoresLayout);
         ListarProfesoresLayout.setHorizontalGroup(
             ListarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(ListarProfesoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
+                .addContainerGap())
         );
         ListarProfesoresLayout.setVerticalGroup(
             ListarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(ListarProfesoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         ProfesoresTabbedPane.addTab("Listar", ListarProfesores);
+
+        jLabel63.setText("DNI");
+
+        jLabel64.setText("Nombre");
+
+        jLabel65.setText("Apellidos");
+
+        apellidoProfesor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                apellidoProfesor1ActionPerformed(evt);
+            }
+        });
+
+        jLabel66.setText("Dirección");
+
+        jLabel67.setText("Telefono");
+
+        registrarProfesor1.setText("Editar Profesor");
 
         javax.swing.GroupLayout EditarProfesoresLayout = new javax.swing.GroupLayout(EditarProfesores);
         EditarProfesores.setLayout(EditarProfesoresLayout);
         EditarProfesoresLayout.setHorizontalGroup(
             EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EditarProfesoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(EditarProfesoresLayout.createSequentialGroup()
+                        .addGroup(EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel63)
+                            .addComponent(jLabel65)
+                            .addComponent(jLabel66)
+                            .addComponent(jLabel67)
+                            .addComponent(jLabel64))
+                        .addGap(44, 44, 44)
+                        .addGroup(EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(telefonoProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(direccionProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(apellidoProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombreProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dniProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(apellidodosProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(registrarProfesor1))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
         EditarProfesoresLayout.setVerticalGroup(
             EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EditarProfesoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(dniProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel63))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nombreProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel64))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(apellidoProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(apellidodosProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel65))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(direccionProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel66))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(EditarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(telefonoProfesor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel67))
+                .addGap(100, 100, 100)
+                .addComponent(registrarProfesor1)
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         ProfesoresTabbedPane.addTab("Editar", EditarProfesores);
+
+        eliminarProfesores.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane6.setViewportView(eliminarProfesores);
 
         javax.swing.GroupLayout EliminarProfesoresLayout = new javax.swing.GroupLayout(EliminarProfesores);
         EliminarProfesores.setLayout(EliminarProfesoresLayout);
         EliminarProfesoresLayout.setHorizontalGroup(
             EliminarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EliminarProfesoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
+                .addContainerGap())
         );
         EliminarProfesoresLayout.setVerticalGroup(
             EliminarProfesoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EliminarProfesoresLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         ProfesoresTabbedPane.addTab("Eliminar", EliminarProfesores);
@@ -237,7 +750,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        MainTabbedPane.addTab("Profesores", ProfesoresTab);
+        MainTabbedPane3.addTab("Profesores", ProfesoresTab);
 
         apellidoAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,7 +758,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        tipoLicencia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        tipoLicencia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C" }));
 
         jLabel1.setText("DNI");
 
@@ -258,8 +771,6 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel5.setText("Telefono");
 
         jLabel6.setText("Tipo Licencia");
-
-        jLabel7.setText("Costo");
 
         matricularAlumno.setText("Matricular Alumno");
 
@@ -280,12 +791,7 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(jLabel2))
                         .addGap(44, 44, 44)
                         .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(AgregarAlumnosLayout.createSequentialGroup()
-                                .addComponent(tipoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel7)
-                                .addGap(18, 18, 18)
-                                .addComponent(costoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tipoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(AgregarAlumnosLayout.createSequentialGroup()
                                 .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(telefonoAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -296,7 +802,7 @@ public class MainFrame extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(apellidodosAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(matricularAlumno))
-                .addContainerGap(254, Short.MAX_VALUE))
+                .addContainerGap(317, Short.MAX_VALUE))
         );
         AgregarAlumnosLayout.setVerticalGroup(
             AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -325,25 +831,42 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tipoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(costoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                    .addComponent(jLabel6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                 .addComponent(matricularAlumno)
                 .addContainerGap())
         );
 
         AlumnosTabbedPane.addTab("Agregar", AgregarAlumnos);
 
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
         javax.swing.GroupLayout ListarAlumnosLayout = new javax.swing.GroupLayout(ListarAlumnos);
         ListarAlumnos.setLayout(ListarAlumnosLayout);
         ListarAlumnosLayout.setHorizontalGroup(
             ListarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 576, Short.MAX_VALUE)
+            .addGroup(ListarAlumnosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
+                .addContainerGap())
         );
         ListarAlumnosLayout.setVerticalGroup(
             ListarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 310, Short.MAX_VALUE)
+            .addGroup(ListarAlumnosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         AlumnosTabbedPane.addTab("Listar", ListarAlumnos);
@@ -354,7 +877,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        tipoLicencia1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        tipoLicencia1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C" }));
 
         jLabel8.setText("DNI");
 
@@ -368,9 +891,9 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel13.setText("Tipo Licencia");
 
-        jLabel14.setText("Costo");
+        matricularAlumno1.setText("Editar  Alumno");
 
-        matricularAlumno1.setText("Matricular Alumno");
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout EditarAlumnosLayout = new javax.swing.GroupLayout(EditarAlumnos);
         EditarAlumnos.setLayout(EditarAlumnosLayout);
@@ -378,7 +901,7 @@ public class MainFrame extends javax.swing.JFrame {
             EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EditarAlumnosLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(EditarAlumnosLayout.createSequentialGroup()
                         .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
@@ -389,12 +912,7 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(jLabel9))
                         .addGap(44, 44, 44)
                         .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(EditarAlumnosLayout.createSequentialGroup()
-                                .addComponent(tipoLicencia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel14)
-                                .addGap(18, 18, 18)
-                                .addComponent(costoLicencia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tipoLicencia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(EditarAlumnosLayout.createSequentialGroup()
                                 .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(telefonoAlumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -404,13 +922,16 @@ public class MainFrame extends javax.swing.JFrame {
                                     .addComponent(dniAlumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(apellidodosAlumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(matricularAlumno1))
-                .addContainerGap(254, Short.MAX_VALUE))
+                    .addComponent(matricularAlumno1)
+                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(317, Short.MAX_VALUE))
         );
         EditarAlumnosLayout.setVerticalGroup(
             EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EditarAlumnosLayout.createSequentialGroup()
-                .addContainerGap(66, Short.MAX_VALUE)
+                .addGap(24, 24, 24)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(dniAlumno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
@@ -434,9 +955,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(EditarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tipoLicencia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(costoLicencia1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel14))
+                    .addComponent(jLabel13))
                 .addGap(18, 18, 18)
                 .addComponent(matricularAlumno1)
                 .addContainerGap())
@@ -444,15 +963,34 @@ public class MainFrame extends javax.swing.JFrame {
 
         AlumnosTabbedPane.addTab("Editar", EditarAlumnos);
 
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable2);
+
         javax.swing.GroupLayout EliminarAlumnosLayout = new javax.swing.GroupLayout(EliminarAlumnos);
         EliminarAlumnos.setLayout(EliminarAlumnosLayout);
         EliminarAlumnosLayout.setHorizontalGroup(
             EliminarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EliminarAlumnosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
+                .addContainerGap())
         );
         EliminarAlumnosLayout.setVerticalGroup(
             EliminarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(EliminarAlumnosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         AlumnosTabbedPane.addTab("Eliminar", EliminarAlumnos);
@@ -474,78 +1012,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        MainTabbedPane.addTab("Alumnos", AlumnosTab);
-
-        javax.swing.GroupLayout AgregarLicenciaLayout = new javax.swing.GroupLayout(AgregarLicencia);
-        AgregarLicencia.setLayout(AgregarLicenciaLayout);
-        AgregarLicenciaLayout.setHorizontalGroup(
-            AgregarLicenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        AgregarLicenciaLayout.setVerticalGroup(
-            AgregarLicenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        LicenciaTabbedPane.addTab("Agregar", AgregarLicencia);
-
-        javax.swing.GroupLayout ListarLicenciaLayout = new javax.swing.GroupLayout(ListarLicencia);
-        ListarLicencia.setLayout(ListarLicenciaLayout);
-        ListarLicenciaLayout.setHorizontalGroup(
-            ListarLicenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        ListarLicenciaLayout.setVerticalGroup(
-            ListarLicenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        LicenciaTabbedPane.addTab("Listar", ListarLicencia);
-
-        javax.swing.GroupLayout EditarLicenciaLayout = new javax.swing.GroupLayout(EditarLicencia);
-        EditarLicencia.setLayout(EditarLicenciaLayout);
-        EditarLicenciaLayout.setHorizontalGroup(
-            EditarLicenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        EditarLicenciaLayout.setVerticalGroup(
-            EditarLicenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        LicenciaTabbedPane.addTab("Editar", EditarLicencia);
-
-        javax.swing.GroupLayout EliminarLicenciaLayout = new javax.swing.GroupLayout(EliminarLicencia);
-        EliminarLicencia.setLayout(EliminarLicenciaLayout);
-        EliminarLicenciaLayout.setHorizontalGroup(
-            EliminarLicenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        EliminarLicenciaLayout.setVerticalGroup(
-            EliminarLicenciaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        LicenciaTabbedPane.addTab("Eliminar", EliminarLicencia);
-
-        javax.swing.GroupLayout LicenciaTabLayout = new javax.swing.GroupLayout(LicenciaTab);
-        LicenciaTab.setLayout(LicenciaTabLayout);
-        LicenciaTabLayout.setHorizontalGroup(
-            LicenciaTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LicenciaTabLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(LicenciaTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        LicenciaTabLayout.setVerticalGroup(
-            LicenciaTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LicenciaTabLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(LicenciaTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        MainTabbedPane.addTab("Licencia", LicenciaTab);
+        MainTabbedPane3.addTab("Alumnos", AlumnosTab);
 
         javax.swing.GroupLayout AgregarClasesLayout = new javax.swing.GroupLayout(AgregarClases);
         AgregarClases.setLayout(AgregarClasesLayout);
@@ -612,11 +1079,11 @@ public class MainFrame extends javax.swing.JFrame {
             ClasesTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ClasesTabLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ClasesTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
+                .addComponent(ClasesTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        MainTabbedPane.addTab("Clases", ClasesTab);
+        MainTabbedPane3.addTab("Clases", ClasesTab);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -626,10 +1093,252 @@ public class MainFrame extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 355, Short.MAX_VALUE)
+            .addGap(0, 383, Short.MAX_VALUE)
         );
 
-        MainTabbedPane.addTab("Examen", jPanel1);
+        MainTabbedPane3.addTab("Examen", jPanel1);
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane7.setViewportView(jTable3);
+
+        javax.swing.GroupLayout DocenciaTabLayout = new javax.swing.GroupLayout(DocenciaTab);
+        DocenciaTab.setLayout(DocenciaTabLayout);
+        DocenciaTabLayout.setHorizontalGroup(
+            DocenciaTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DocenciaTabLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        DocenciaTabLayout.setVerticalGroup(
+            DocenciaTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DocenciaTabLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        MainTabbedPane3.addTab("Docencia", DocenciaTab);
+
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable4);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        MainTabbedPane3.addTab("Matricula", jPanel5);
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane8.setViewportView(jTable5);
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        MainTabbedPane3.addTab("Documentación", jPanel6);
+
+        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane9.setViewportView(jTable6);
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        MainTabbedPane3.addTab("Consumo de Vehículos", jPanel7);
+
+        jTable7.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane10.setViewportView(jTable7);
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE))
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+
+        MainTabbedPane3.addTab("Pagos", jPanel8);
+
+        jLabel68.setText("Tipo");
+
+        jButton1.setText("Crear Licencia");
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addComponent(jLabel68)
+                        .addGap(32, 32, 32)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(436, Short.MAX_VALUE))
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel68)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addComponent(jButton1)
+                .addContainerGap(234, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Crear Licencia", jPanel10);
+
+        jTable8.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane11.setViewportView(jTable8);
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(101, 101, 101)
+                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(121, Short.MAX_VALUE))
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(78, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Listar Licencias", jPanel11);
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane2)
+                .addContainerGap())
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane2)
+                .addContainerGap())
+        );
+
+        MainTabbedPane3.addTab("Licencia", jPanel9);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -637,19 +1346,35 @@ public class MainFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(MainTabbedPane)
+                .addComponent(MainTabbedPane3)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(MainTabbedPane)
+                .addComponent(MainTabbedPane3)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void modeloVehiculo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modeloVehiculo3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_modeloVehiculo3ActionPerformed
+
+    private void modeloVehiculo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modeloVehiculo4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_modeloVehiculo4ActionPerformed
+
+    private void apellidoProfesorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apellidoProfesorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_apellidoProfesorActionPerformed
+
+    private void apellidoProfesor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apellidoProfesor1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_apellidoProfesor1ActionPerformed
 
     private void apellidoAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apellidoAlumnoActionPerformed
         // TODO add your handling code here:
@@ -701,67 +1426,227 @@ public class MainFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel AgregarAlumnos;
     private javax.swing.JPanel AgregarClases;
-    private javax.swing.JPanel AgregarLicencia;
     private javax.swing.JPanel AgregarProfesores;
     private javax.swing.JPanel AgregarVehiculo;
+    private javax.swing.JPanel AgregarVehiculo1;
+    private javax.swing.JPanel AgregarVehiculo2;
+    private javax.swing.JPanel AgregarVehiculo3;
     private javax.swing.JPanel AlumnosTab;
     private javax.swing.JTabbedPane AlumnosTabbedPane;
     private javax.swing.JPanel ClasesTab;
     private javax.swing.JTabbedPane ClasesTabbedPane;
+    private javax.swing.JPanel DocenciaTab;
     private javax.swing.JPanel EditarAlumnos;
     private javax.swing.JPanel EditarClases;
-    private javax.swing.JPanel EditarLicencia;
     private javax.swing.JPanel EditarProfesores;
     private javax.swing.JPanel EditarVehiculo;
     private javax.swing.JPanel EliminarAlumnos;
     private javax.swing.JPanel EliminarClases;
-    private javax.swing.JPanel EliminarLicencia;
     private javax.swing.JPanel EliminarProfesores;
     private javax.swing.JPanel EliminarVehiculo;
-    private javax.swing.JPanel LicenciaTab;
-    private javax.swing.JTabbedPane LicenciaTabbedPane;
     private javax.swing.JPanel ListarAlumnos;
     private javax.swing.JPanel ListarClases;
-    private javax.swing.JPanel ListarLicencia;
     private javax.swing.JPanel ListarProfesores;
     private javax.swing.JPanel ListarVehiculo;
     private javax.swing.JTabbedPane MainTabbedPane;
+    private javax.swing.JTabbedPane MainTabbedPane1;
+    private javax.swing.JTabbedPane MainTabbedPane2;
+    private javax.swing.JTabbedPane MainTabbedPane3;
     private javax.swing.JPanel ProfesoresTab;
     private javax.swing.JTabbedPane ProfesoresTabbedPane;
     private javax.swing.JTabbedPane VehiculoTabbedPane;
+    private javax.swing.JTabbedPane VehiculoTabbedPane1;
+    private javax.swing.JTabbedPane VehiculoTabbedPane2;
+    private javax.swing.JTabbedPane VehiculoTabbedPane3;
     private javax.swing.JPanel VehiculosTab;
+    private javax.swing.JPanel VehiculosTab1;
+    private javax.swing.JPanel VehiculosTab2;
+    private javax.swing.JPanel VehiculosTab3;
+    private javax.swing.JTextField aniocompraVehiculo;
+    private javax.swing.JTextField aniocompraVehiculo1;
+    private javax.swing.JTextField aniocompraVehiculo2;
+    private javax.swing.JTextField aniocompraVehiculo3;
+    private javax.swing.JTextField aniocompraVehiculo4;
     private javax.swing.JTextField apellidoAlumno;
     private javax.swing.JTextField apellidoAlumno1;
+    private javax.swing.JTextField apellidoProfesor;
+    private javax.swing.JTextField apellidoProfesor1;
     private javax.swing.JTextField apellidodosAlumno;
     private javax.swing.JTextField apellidodosAlumno1;
-    private javax.swing.JTextField costoLicencia;
-    private javax.swing.JTextField costoLicencia1;
+    private javax.swing.JTextField apellidodosProfesor;
+    private javax.swing.JTextField apellidodosProfesor1;
+    private javax.swing.JTextField cilindradaVehiculo;
+    private javax.swing.JTextField cilindradaVehiculo1;
+    private javax.swing.JTextField cilindradaVehiculo2;
+    private javax.swing.JTextField cilindradaVehiculo3;
+    private javax.swing.JTextField cilindradaVehiculo4;
     private javax.swing.JTextField direccionAlumno;
     private javax.swing.JTextField direccionAlumno1;
+    private javax.swing.JTextField direccionProfesor;
+    private javax.swing.JTextField direccionProfesor1;
     private javax.swing.JTextField dniAlumno;
     private javax.swing.JTextField dniAlumno1;
+    private javax.swing.JTextField dniProfesor;
+    private javax.swing.JTextField dniProfesor1;
+    private javax.swing.JTextField dniprofesorVehiculo;
+    private javax.swing.JTextField dniprofesorVehiculo1;
+    private javax.swing.JTextField dniprofesorVehiculo2;
+    private javax.swing.JTextField dniprofesorVehiculo3;
+    private javax.swing.JTextField dniprofesorVehiculo4;
+    private javax.swing.JTable eliminarProfesores;
+    private javax.swing.JTable eliminarVehiculo;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
+    private javax.swing.JTable jTable6;
+    private javax.swing.JTable jTable7;
+    private javax.swing.JTable jTable8;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTable listarProfesores;
+    private javax.swing.JTextField marcaVehiculo;
+    private javax.swing.JTextField marcaVehiculo1;
+    private javax.swing.JTextField marcaVehiculo2;
+    private javax.swing.JTextField marcaVehiculo3;
+    private javax.swing.JTextField marcaVehiculo4;
+    private javax.swing.JTextField matriculaVehiculo;
+    private javax.swing.JTextField matriculaVehiculo1;
+    private javax.swing.JTextField matriculaVehiculo2;
+    private javax.swing.JTextField matriculaVehiculo3;
+    private javax.swing.JTextField matriculaVehiculo4;
     private javax.swing.JButton matricularAlumno;
     private javax.swing.JButton matricularAlumno1;
+    private javax.swing.JTextField modeloVehiculo;
+    private javax.swing.JTextField modeloVehiculo1;
+    private javax.swing.JTextField modeloVehiculo2;
+    private javax.swing.JTextField modeloVehiculo3;
+    private javax.swing.JTextField modeloVehiculo4;
     private javax.swing.JTextField nombreAlumno;
     private javax.swing.JTextField nombreAlumno1;
+    private javax.swing.JTextField nombreProfesor;
+    private javax.swing.JTextField nombreProfesor1;
+    private javax.swing.JButton registrarProfesor;
+    private javax.swing.JButton registrarProfesor1;
+    private javax.swing.JButton registrarVehiculo;
+    private javax.swing.JButton registrarVehiculo1;
+    private javax.swing.JButton registrarVehiculo2;
+    private javax.swing.JButton registrarVehiculo3;
+    private javax.swing.JButton registrarVehiculo4;
+    private javax.swing.JTextField tarifaVehiculo;
+    private javax.swing.JTextField tarifaVehiculo1;
+    private javax.swing.JTextField tarifaVehiculo2;
+    private javax.swing.JTextField tarifaVehiculo3;
+    private javax.swing.JTextField tarifaVehiculo4;
     private javax.swing.JTextField telefonoAlumno;
     private javax.swing.JTextField telefonoAlumno1;
+    private javax.swing.JTextField telefonoProfesor;
+    private javax.swing.JTextField telefonoProfesor1;
     private javax.swing.JComboBox<String> tipoLicencia;
     private javax.swing.JComboBox<String> tipoLicencia1;
+    private javax.swing.JComboBox<String> tipoLicenciaVehiculo;
+    private javax.swing.JComboBox<String> tipoLicenciaVehiculo1;
+    private javax.swing.JComboBox<String> tipoLicenciaVehiculo2;
+    private javax.swing.JComboBox<String> tipoLicenciaVehiculo3;
+    private javax.swing.JComboBox<String> tipoLicenciaVehiculo4;
+    private javax.swing.JTextField tipolujoVehiculo;
+    private javax.swing.JTextField tipolujoVehiculo1;
+    private javax.swing.JTextField tipolujoVehiculo2;
+    private javax.swing.JTextField tipolujoVehiculo3;
+    private javax.swing.JTextField tipolujoVehiculo4;
     // End of variables declaration//GEN-END:variables
 }
