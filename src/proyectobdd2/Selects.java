@@ -48,12 +48,12 @@ public class Selects {
         ResultSet rs = connector.getSession().execute(bsSelect);
 
         rs.forEach(rr -> {
-            datos[0] = rr.getString("dni_prof");
+            datos[0] = rr.getInt("dni_prof") + "";
             datos[1] = rr.getString("nombre");
             datos[2] = rr.getString("apellido_1");
             datos[3] = rr.getString("apellido_2");
             datos[4] = rr.getString("direccion");
-            datos[5] = rr.getString("telefono");
+            datos[5] = rr.getLong("telefono") + "";
 
             model.addRow(datos);
         });
