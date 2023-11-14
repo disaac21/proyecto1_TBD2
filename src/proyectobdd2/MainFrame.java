@@ -1268,11 +1268,14 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel20.setText("ID");
 
-        jTextField4.setText("jTextField4");
-
         jButton17.setText("Eliminar");
 
         jButton18.setText("Refresacar Tabla");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout EliminarAlumnosLayout = new javax.swing.GroupLayout(EliminarAlumnos);
         EliminarAlumnos.setLayout(EliminarAlumnosLayout);
@@ -2155,6 +2158,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         DeleteData.deleteVehiculo(borrarVehiculoTextField.getText());
+        borrarVehiculoTextField.setText("");
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
@@ -2164,6 +2168,10 @@ public class MainFrame extends javax.swing.JFrame {
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         DeleteData.deleteProfesor(Integer.parseInt(jTextField3.getText()));
     }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        Selects.selectAlumnos(jTable2);
+    }//GEN-LAST:event_jButton18ActionPerformed
 
     /**
      * @param args the command line arguments

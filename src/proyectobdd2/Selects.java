@@ -593,7 +593,7 @@ public class Selects {
             DBConnector connector = new DBConnector();
             connector.connectdb("localhost", 9042);
 
-            final String selectQuery = "SELECT * FROM autoescuela_keyspace.VehiculoByTipoLicTarifa";
+            final String selectQuery = "SELECT * FROM autoescuela_keyspace.Vehiculo";
 
             PreparedStatement psSelect = connector.getSession().prepare(selectQuery);
             BoundStatement bsSelect = psSelect.bind();
