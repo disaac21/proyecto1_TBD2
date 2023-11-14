@@ -36,7 +36,7 @@ public class InsertData {
         try {
             DBConnector connector = new DBConnector();
             connector.connectdb("localhost", 9042);
-            
+
             int year = Integer.parseInt(dateString.substring(0, 4));
             int month = Integer.parseInt(dateString.substring(5, 7));
             int day = Integer.parseInt(dateString.substring(8, 10));
@@ -59,7 +59,9 @@ public class InsertData {
         }
     }
 
-    public static void insertarProfesor(int dni_prof, String nombre, String apellido_1, String apellido_2, String direccion, long telefono) {
+    public static void insertarProfesor(int dni_prof, String nombre, String apellido_1,
+            String apellido_2, String direccion, long telefono,
+            String tipo_lic, String matricula) {
 
 //        INSERT INTO Profesor (dni_prof, nombre, apellido_1, apellido_2, direccion, telefono)
 //        VALUES (1, 'Rafael', 'Andino', 'Pozo', 'Onieva 3', 1);
@@ -70,6 +72,32 @@ public class InsertData {
             String insertarQuery = "INSERT INTO autoescuela_keyspace.Profesor (dni_prof, nombre, apellido_1, apellido_2, direccion, telefono) VALUES (?,?,?,?,?,?);";
             PreparedStatement psInsert = connector.getSession().prepare(insertarQuery);
             BoundStatement bsInsert = psInsert.bind(dni_prof, nombre, apellido_1, apellido_2, direccion, telefono);
+
+            connector.getSession().execute(bsInsert);
+
+            connector.close();
+
+            insertarDocencia(dni_prof, tipo_lic, matricula);
+
+//            System.out.println("SE PUDOOOOOOO!!!!!");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("algo malo paso a la hora de intentar insertar");
+        }
+
+    }
+
+    public static void insertarDocencia(int dni_prof, String tipo_lic, String matricula) {
+
+//        INSERT INTO Profesor (dni_prof, nombre, apellido_1, apellido_2, direccion, telefono)
+//        VALUES (1, 'Rafael', 'Andino', 'Pozo', 'Onieva 3', 1);
+        try {
+            DBConnector connector = new DBConnector();
+            connector.connectdb("localhost", 9042);
+
+            String insertarQuery = "INSERT INTO autoescuela_keyspace.Docencia (dni_prof, tipo_lic, matricula) VALUES (?,?,?);";
+            PreparedStatement psInsert = connector.getSession().prepare(insertarQuery);
+            BoundStatement bsInsert = psInsert.bind(dni_prof, tipo_lic, matricula);
 
             connector.getSession().execute(bsInsert);
 

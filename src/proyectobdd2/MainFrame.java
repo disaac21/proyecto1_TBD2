@@ -1426,9 +1426,11 @@ public class MainFrame extends javax.swing.JFrame {
                 new MainFrame().setVisible(true);
 //                InsertData.insertarLicencia("Pesada");
 //                InsertData.insertarAlumno(11, "Daniel", "Juarez", "Funes", "Trapiche", 1, "A", null);
-//                InsertData.insertarProfesor(10, "Anibal", "Aguilar", "Perez", "Onieva 3", 10);
+//                InsertData.insertarProfesor(10, "Anibal", "Aguilar", "Perez", "Onieva 3", 10,"Pesada","000001" );
 //                Selects.selectVehiculos();
 //                InsertData.insertarVehiculo("000008", "Toyota", "Prado", 22100, "2003-11-11", 1000, "B", 2, "normal", "B");
+
+                    Selects.selectDocencia();
 
 //                Selects.selectAlumnos();
 //                Selects.selectLicencias();

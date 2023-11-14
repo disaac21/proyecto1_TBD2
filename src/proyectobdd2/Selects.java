@@ -49,6 +49,34 @@ public class Selects {
             e.printStackTrace();
         }
     }
+    
+    public static void selectDocencia() {
+        try {
+            DBConnector connector = new DBConnector();
+            connector.connectdb("localhost", 9042);
+
+            final String selectQuery = "SELECT * FROM autoescuela_keyspace.Docencia";
+
+            PreparedStatement psSelect = connector.getSession().prepare(selectQuery);
+            BoundStatement bsSelect = psSelect.bind();
+            ResultSet rs = connector.getSession().execute(bsSelect);
+
+            rs.forEach(rr -> {
+                System.out.println("------ Docencia ------");
+                System.out.println("dni_prof : " + rr.getInt("dni_prof"));
+                System.out.println("tipo_lic : " + rr.getString("tipo_lic"));
+                System.out.println("matricula : " + rr.getString("matricula"));
+                System.out.println("");
+            });
+
+            connector.close();
+            
+            
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void selectVehiculos() {
         try {
