@@ -1269,6 +1269,11 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel20.setText("ID");
 
         jButton17.setText("Eliminar");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
 
         jButton18.setText("Refresacar Tabla");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
@@ -2167,11 +2172,17 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         DeleteData.deleteProfesor(Integer.parseInt(jTextField3.getText()));
+        jTextField3.setText("");
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         Selects.selectAlumnos(jTable2);
     }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        DeleteData.deleteAlumno(Integer.parseInt(jTextField4.getText()));
+        jTextField4.setText("");
+    }//GEN-LAST:event_jButton17ActionPerformed
 
     /**
      * @param args the command line arguments
