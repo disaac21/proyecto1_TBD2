@@ -1,7 +1,10 @@
 package proyectobdd2;
 
 import com.datastax.driver.core.BoundStatement;
+import com.datastax.driver.core.LocalDate;
 import com.datastax.driver.core.PreparedStatement;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class InsertData {
 
@@ -27,17 +30,23 @@ public class InsertData {
 
     }
 
-    public static void insertarVehiculo(String matricula, String marca, String modelo, int cilindrada, 
-            String anio_compra, int tarifa, String tipo_lic,
+    public static void insertarVehiculo(String matricula, String marca, String modelo, int cilindrada,
+            String dateString, int tarifa, String tipo_lic,
             int dni_prof, String tipo_lujo, String licencia_necesaria) {
         try {
             DBConnector connector = new DBConnector();
             connector.connectdb("localhost", 9042);
+            
+            int year = Integer.parseInt(dateString.substring(0, 4));
+            int month = Integer.parseInt(dateString.substring(5, 7));
+            int day = Integer.parseInt(dateString.substring(8, 10));
+
+            LocalDate currentDate = LocalDate.fromYearMonthDay(year, month, day);
 
             String insertarQuery = "INSERT INTO autoescuela_keyspace.Vehiculo (matricula, marca, modelo, cilindrada, anio_compra, tarifa, tipo_lic, dni_prof, tipo_lujo, licencia_necesaria) VALUES (?,?,?,?,?,?,?,?,?,?);";
             PreparedStatement psInsert = connector.getSession().prepare(insertarQuery);
-            BoundStatement bsInsert = psInsert.bind(matricula, marca, modelo, cilindrada, anio_compra, tarifa, tipo_lic,
-            dni_prof, tipo_lujo, licencia_necesaria);
+            BoundStatement bsInsert = psInsert.bind(matricula, marca, modelo, cilindrada, currentDate, tarifa, tipo_lic,
+                    dni_prof, tipo_lujo, licencia_necesaria);
 
             connector.getSession().execute(bsInsert);
 
@@ -49,12 +58,11 @@ public class InsertData {
             System.out.println("algo malo paso a la hora de intentar insertar");
         }
     }
-    
-    public static void insertarProfesor(int dni_prof, String nombre, String apellido_1, String apellido_2, String direccion, int telefono) {
+
+    public static void insertarProfesor(int dni_prof, String nombre, String apellido_1, String apellido_2, String direccion, long telefono) {
 
 //        INSERT INTO Profesor (dni_prof, nombre, apellido_1, apellido_2, direccion, telefono)
 //        VALUES (1, 'Rafael', 'Andino', 'Pozo', 'Onieva 3', 1);
-        
         try {
             DBConnector connector = new DBConnector();
             connector.connectdb("localhost", 9042);
@@ -74,8 +82,8 @@ public class InsertData {
         }
 
     }
-    
-    public static void insertarAlumno(int dni_al, String nombre, String apellido_1, String apellido_2, String direccion, int telefono, String tipo_lic, String coste_et) {
+
+    public static void insertarAlumno(int dni_al, String nombre, String apellido_1, String apellido_2, String direccion, long telefono, String tipo_lic, String coste_et) {
 
         try {
             DBConnector connector = new DBConnector();
@@ -96,7 +104,5 @@ public class InsertData {
         }
 
     }
-
-
 
 }
