@@ -1158,6 +1158,11 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel68.setText("Tipo");
 
         jButton1.setText("Crear Licencia");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -1631,6 +1636,11 @@ public class MainFrame extends javax.swing.JFrame {
     private void coste_etActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coste_etActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_coste_etActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        InsertData.insertarLicencia(jTextField1.getText());
+        jTextField1.setText("");
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
