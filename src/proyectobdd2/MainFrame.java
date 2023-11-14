@@ -1433,7 +1433,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane3.addTab("2. Docencia", DocenciaTab);
+        jTabbedPane3.addTab("2. Formacion Docente", DocenciaTab);
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1626,7 +1626,7 @@ public class MainFrame extends javax.swing.JFrame {
             userScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(userScreenLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
+                .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 388, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
