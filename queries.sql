@@ -136,6 +136,8 @@ CREATE TABLE Vehiculo (
     licencia_necesaria text
 );
 
+        
+
 CREATE TABLE Consumo (
     matricula text,
     n_matricula int,

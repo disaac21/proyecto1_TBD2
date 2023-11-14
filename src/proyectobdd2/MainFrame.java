@@ -53,6 +53,8 @@ public class MainFrame extends javax.swing.JFrame {
         tipolujoVehiculo3 = new javax.swing.JTextField();
         tipoLicenciaVehiculo3 = new javax.swing.JComboBox<>();
         registrarVehiculo3 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        llicencia_necesaria_vechiculo3 = new javax.swing.JTextField();
         ListarVehiculo = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
@@ -227,6 +229,8 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel7.setText("Licencia Necesaria");
+
         javax.swing.GroupLayout AgregarVehiculo3Layout = new javax.swing.GroupLayout(AgregarVehiculo3);
         AgregarVehiculo3.setLayout(AgregarVehiculo3Layout);
         AgregarVehiculo3Layout.setHorizontalGroup(
@@ -252,15 +256,17 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(modeloVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(marcaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(matriculaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
-                        .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel47)
-                            .addComponent(jLabel48))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 130, Short.MAX_VALUE)
+                        .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel47, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel48, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(18, 18, 18)
                         .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(dniprofesorVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tipolujoVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(127, 127, 127))
+                            .addComponent(tipolujoVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(llicencia_necesaria_vechiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(120, 120, 120))
                     .addGroup(AgregarVehiculo3Layout.createSequentialGroup()
                         .addComponent(tipoLicenciaVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -287,7 +293,9 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel42)
-                    .addComponent(modeloVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(modeloVehiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7)
+                    .addComponent(llicencia_necesaria_vechiculo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(AgregarVehiculo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel43)
@@ -1436,7 +1444,30 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_apellidoAlumno1ActionPerformed
 
     private void registrarVehiculo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarVehiculo3ActionPerformed
-        // TODO add your handling code here:
+        String matricula = matriculaVehiculo3.getText();
+        String marca = marcaVehiculo3.getText();
+        String modelo = modeloVehiculo3.getText();
+        int cilindrada = Integer.parseInt(cilindradaVehiculo3.getText());
+        String anio_compra = aniocompraVehiculo3.getText();
+        int tarifa = Integer.parseInt(tarifaVehiculo3.getText());
+        String tipo_lic = tipoLicenciaVehiculo3.getItemAt(tipoLicenciaVehiculo3.getSelectedIndex());
+        int dni_prof = Integer.parseInt(dniprofesorVehiculo3.getText());
+        String tipo_lujo = tipolujoVehiculo3.getText();
+        String licencia_necesaria = llicencia_necesaria_vechiculo3.getText();
+        llicencia_necesaria_vechiculo3.setText("");
+        
+        InsertData.insertarVehiculo(matricula, marca, modelo, cilindrada, anio_compra, tarifa, tipo_lic, dni_prof, tipo_lujo, licencia_necesaria);
+        
+        matriculaVehiculo3.setText("");
+        marcaVehiculo3.setText("");
+        modeloVehiculo3.setText("");
+        cilindradaVehiculo3.setText("");
+        aniocompraVehiculo3.setText("");
+        tarifaVehiculo3.setText("");
+        dniprofesorVehiculo3.setText("");
+        tipolujoVehiculo3.setText("");
+        llicencia_necesaria_vechiculo3.setText("");
+        
     }//GEN-LAST:event_registrarVehiculo3ActionPerformed
 
     /**
@@ -1579,6 +1610,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -1618,6 +1650,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTable jTable9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTable listarProfesores;
+    private javax.swing.JTextField llicencia_necesaria_vechiculo3;
     private javax.swing.JTextField marcaVehiculo3;
     private javax.swing.JTextField marcaVehiculo4;
     private javax.swing.JTextField matriculaVehiculo3;
