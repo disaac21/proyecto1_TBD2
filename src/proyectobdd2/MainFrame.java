@@ -144,6 +144,8 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         matricularAlumno = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        coste_et = new javax.swing.JTextField();
         ListarAlumnos = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -880,6 +882,19 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel6.setText("Tipo Licencia");
 
         matricularAlumno.setText("Matricular Alumno");
+        matricularAlumno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                matricularAlumnoActionPerformed(evt);
+            }
+        });
+
+        jLabel14.setText("Coste Examen Teorico");
+
+        coste_et.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                coste_etActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout AgregarAlumnosLayout = new javax.swing.GroupLayout(AgregarAlumnos);
         AgregarAlumnos.setLayout(AgregarAlumnosLayout);
@@ -888,6 +903,7 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(AgregarAlumnosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(matricularAlumno)
                     .addGroup(AgregarAlumnosLayout.createSequentialGroup()
                         .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -895,9 +911,11 @@ public class MainFrame extends javax.swing.JFrame {
                             .addComponent(jLabel4)
                             .addComponent(jLabel5)
                             .addComponent(jLabel6)
-                            .addComponent(jLabel2))
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel14))
                         .addGap(44, 44, 44)
                         .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(coste_et, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tipoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(AgregarAlumnosLayout.createSequentialGroup()
                                 .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -907,9 +925,8 @@ public class MainFrame extends javax.swing.JFrame {
                                     .addComponent(nombreAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(dniAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(apellidodosAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(matricularAlumno))
-                .addContainerGap(317, Short.MAX_VALUE))
+                                .addComponent(apellidodosAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(270, Short.MAX_VALUE))
         );
         AgregarAlumnosLayout.setVerticalGroup(
             AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -939,7 +956,11 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tipoLicencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(AgregarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(coste_et, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addComponent(matricularAlumno)
                 .addContainerGap())
         );
@@ -1137,6 +1158,11 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel68.setText("Tipo");
 
         jButton1.setText("Crear Licencia");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -1586,6 +1612,36 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void matricularAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matricularAlumnoActionPerformed
+        int dni_al =  Integer.parseInt(dniAlumno.getText());
+        String nombre =  nombreAlumno.getText();
+        String apellido_1 =  apellidoAlumno.getText();
+        String apellido_2 =  apellidodosAlumno.getText();
+        String direccion =  direccionAlumno.getText();
+        long telefono =  Long.parseLong(telefonoAlumno.getText());
+        String coste = coste_et.getText();
+        String tipo_lic = tipoLicencia.getItemAt(tipoLicencia.getSelectedIndex());
+        
+        InsertData.insertarAlumno(dni_al, nombre, apellido_1, apellido_2, direccion, telefono, tipo_lic, coste);
+        
+        dniAlumno.setText("");
+        nombreAlumno.setText("");
+        apellidoAlumno.setText("");
+        apellidodosAlumno.setText("");
+        direccionAlumno.setText("");
+        telefonoAlumno.setText("");
+        coste_et.setText("");
+    }//GEN-LAST:event_matricularAlumnoActionPerformed
+
+    private void coste_etActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coste_etActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_coste_etActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        InsertData.insertarLicencia(jTextField1.getText());
+        jTextField1.setText("");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1666,6 +1722,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField apellidodosProfesor1;
     private javax.swing.JTextField cilindradaVehiculo3;
     private javax.swing.JTextField cilindradaVehiculo4;
+    private javax.swing.JTextField coste_et;
     private javax.swing.JTextField direccionAlumno;
     private javax.swing.JTextField direccionAlumno1;
     private javax.swing.JTextField direccionProfesor;
@@ -1690,6 +1747,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

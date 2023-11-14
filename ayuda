@@ -1,0 +1,17 @@
+CREATE TABLE Alumno (
+    dni_al int PRIMARY KEY,
+    nombre text,
+    apellido_1 text,
+    apellido_2 text,
+    direccion text,
+    telefono bigint,
+    tipo_lic text,
+    coste_et text
+);
+
+dniAlumno.setText("");
+nombreAlumno.setText("");
+apellidoAlumno.setText("");
+apellidodosAlumno.setText("");
+direccionAlumno.setText("");
+telefonoAlumno.setText("");
