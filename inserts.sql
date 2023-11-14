@@ -49,8 +49,7 @@ INSERT INTO Lujo (tipo_lujo, tarifa_adicional) VALUES ('exclusivo', 5000);
 
 -- Insert into Vehiculo
 INSERT INTO Vehiculo (
-    matricula, marca, modelo, cilindrada, anio_compra, tarifa, tipo_lic,
-    dni_prof, tipo_lujo, licencia_necesaria
+    matricula, marca, modelo, cilindrada, anio_compra, tarifa, tipo_lic, dni_prof, tipo_lujo, licencia_necesaria
 ) VALUES (
     '000001', 'Ford', 'Escort', 2000, '1999-03-21', 1000, 'B', 2, 'normal', 'B'
 );
