@@ -121,7 +121,7 @@ public class InsertData {
 
     }
 
-    public static void insertarAlumno(int dni_al, String nombre, String apellido_1, String apellido_2, String direccion, long telefono, String tipo_lic, String coste_et) {
+    public static void insertarAlumno(int dni_al, String nombre, String apellido_1, String apellido_2, String direccion, long telefono, String tipo_lic, String coste_et, int matricula, boolean doc_presente, int dni_prof) {
 
         try {
             DBConnector connector = new DBConnector();
@@ -130,6 +130,17 @@ public class InsertData {
             String insertarQuery = "INSERT INTO autoescuela_keyspace.Alumno (dni_al, nombre, apellido_1, apellido_2, direccion, telefono, tipo_lic, coste_et) VALUES (?,?,?,?,?,?,?,?);";
             PreparedStatement psInsert = connector.getSession().prepare(insertarQuery);
             BoundStatement bsInsert = psInsert.bind(dni_al, nombre, apellido_1, apellido_2, direccion, telefono, tipo_lic, coste_et);
+
+            connector.getSession().execute(bsInsert);
+
+            connector.close();
+            
+            
+            connector.connectdb("localhost", 9042);
+
+            insertarQuery = "INSERT INTO autoescuela_keyspace.Matricula (n_matricula, doc_presente, dni_al, dni_prof, tipo_lic, coste_mat) VALUES (?,?,?,?,?,?);";
+            psInsert = connector.getSession().prepare(insertarQuery);
+            bsInsert = psInsert.bind(matricula, doc_presente, dni_al, dni_prof, tipo_lic, coste_et);
 
             connector.getSession().execute(bsInsert);
 
