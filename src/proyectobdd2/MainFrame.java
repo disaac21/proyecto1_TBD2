@@ -674,10 +674,10 @@ public class MainFrame extends javax.swing.JFrame {
             public void run() {
                 new MainFrame().setVisible(true);
 //                InsertData.insertar();
-                Selects.selectVehiculos();
-                Selects.selectAlumnos();
-                Selects.selectLicencias();
-                Selects.selectProfesores();
+//                Selects.selectVehiculos();
+//                Selects.selectAlumnos();
+//                Selects.selectLicencias();
+//                Selects.selectProfesores();
 
             }
         });
