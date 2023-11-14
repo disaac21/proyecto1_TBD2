@@ -1104,11 +1104,17 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="telefonoProfesor1">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="telefonoProfesor1ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="registrarProfesor1">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Editar Profesor"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registrarProfesor1ActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>

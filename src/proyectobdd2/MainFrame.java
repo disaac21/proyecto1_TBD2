@@ -760,7 +760,18 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel67.setText("Telefono");
 
+        telefonoProfesor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                telefonoProfesor1ActionPerformed(evt);
+            }
+        });
+
         registrarProfesor1.setText("Editar Profesor");
+        registrarProfesor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registrarProfesor1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout EditarProfesoresLayout = new javax.swing.GroupLayout(EditarProfesores);
         EditarProfesores.setLayout(EditarProfesoresLayout);
@@ -1713,6 +1724,28 @@ public class MainFrame extends javax.swing.JFrame {
         dniprofesorVehiculo4.setText("");
         tipolujoVehiculo4.setText("");
     }//GEN-LAST:event_registrarVehiculo4ActionPerformed
+
+    private void telefonoProfesor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telefonoProfesor1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_telefonoProfesor1ActionPerformed
+
+    private void registrarProfesor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarProfesor1ActionPerformed
+        int dni_prof = Integer.parseInt(dniProfesor1.getText());
+        String nombre = nombreProfesor1.getText();
+        String apellido_1 = apellidoProfesor1.getText();
+        String apellido_2 = apellidodosProfesor1.getText();
+        String direccion = direccionProfesor1.getText();
+        long telefono = Long.parseLong(telefonoProfesor1.getText());
+        
+        UpdateData.updateProfesor(dni_prof, nombre, apellido_1, apellido_2, direccion, telefono);
+        
+        dniProfesor1.setText("");
+        nombreProfesor1.setText("");
+        apellidoProfesor1.setText("");
+        apellidodosProfesor1.setText("");
+        direccionProfesor1.setText("");
+        telefonoProfesor1.setText("");
+    }//GEN-LAST:event_registrarProfesor1ActionPerformed
 
     /**
      * @param args the command line arguments

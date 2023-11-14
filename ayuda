@@ -1,0 +1,16 @@
+CREATE TABLE Profesor (
+    dni_prof int PRIMARY KEY,
+    nombre text,
+    apellido_1 text,
+    apellido_2 text,
+    direccion text,
+    telefono bigint
+);
+
+
+dniProfesor1.setText("");
+dniProfesor1.setText("");
+apellidoProfesor1.setText("");
+apellidodosProfesor1.setText("");
+direccionProfesor1.setText("");
+telefonoProfesor1.setText("");
