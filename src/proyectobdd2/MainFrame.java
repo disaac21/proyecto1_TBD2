@@ -188,12 +188,15 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane12 = new javax.swing.JScrollPane();
         jTable9 = new javax.swing.JTable();
+        jButton8 = new javax.swing.JButton();
         DocenciaTab = new javax.swing.JPanel();
         jScrollPane7 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
+        jButton7 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
+        jButton10 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane8 = new javax.swing.JScrollPane();
         jTable5 = new javax.swing.JTable();
@@ -203,6 +206,7 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
         jTable7 = new javax.swing.JTable();
+        jButton9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -342,7 +346,7 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane13.setViewportView(jTable10);
 
-        jButton4.setText("jButton4");
+        jButton4.setText("Ver Vehiculos");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -381,7 +385,7 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane14.setViewportView(jTable11);
 
-        jButton5.setText("jButton4");
+        jButton5.setText("Ver Vehiculos");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -452,6 +456,11 @@ public class MainFrame extends javax.swing.JFrame {
         tipoLicenciaVehiculo4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C" }));
 
         registrarVehiculo4.setText("Editar Vehículo");
+        registrarVehiculo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registrarVehiculo4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout EditarVehiculoLayout = new javax.swing.GroupLayout(EditarVehiculo);
         EditarVehiculo.setLayout(EditarVehiculoLayout);
@@ -1334,6 +1343,8 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane12.setViewportView(jTable9);
 
+        jButton8.setText("jButton8");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -1341,12 +1352,18 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jScrollPane12, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton8)
+                .addGap(25, 25, 25))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane12, javax.swing.GroupLayout.DEFAULT_SIZE, 371, Short.MAX_VALUE)
+                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addComponent(jButton8)
                 .addContainerGap())
         );
 
@@ -1365,6 +1382,13 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane7.setViewportView(jTable3);
 
+        jButton7.setText("Ok");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout DocenciaTabLayout = new javax.swing.GroupLayout(DocenciaTab);
         DocenciaTab.setLayout(DocenciaTabLayout);
         DocenciaTabLayout.setHorizontalGroup(
@@ -1373,12 +1397,18 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DocenciaTabLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton7)
+                .addGap(23, 23, 23))
         );
         DocenciaTabLayout.setVerticalGroup(
             DocenciaTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DocenciaTabLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DocenciaTabLayout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButton7)
                 .addContainerGap())
         );
 
@@ -1397,6 +1427,8 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(jTable4);
 
+        jButton10.setText("Ver Matricula");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -1405,13 +1437,18 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton10)
+                .addGap(25, 25, 25))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addComponent(jButton10))
         );
 
         MainTabbedPane3.addTab("5. Matricula", jPanel5);
@@ -1493,6 +1530,8 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane10.setViewportView(jTable7);
 
+        jButton9.setText("jButton9");
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
@@ -1500,13 +1539,19 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton9)
+                .addGap(21, 21, 21))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton9)
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         MainTabbedPane3.addTab("9. Pagos", jPanel8);
@@ -1642,6 +1687,33 @@ public class MainFrame extends javax.swing.JFrame {
         jTextField1.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void registrarVehiculo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarVehiculo4ActionPerformed
+        String matricula = matriculaVehiculo4.getText();
+        String marca = marcaVehiculo4.getText();
+        String modelo = modeloVehiculo4.getText();
+        int cilindrada = Integer.parseInt(cilindradaVehiculo4.getText());
+        String anio_compra = aniocompraVehiculo4.getText();
+        int tarifa = Integer.parseInt(tarifaVehiculo4.getText());
+        int dni_prof = Integer.parseInt(dniprofesorVehiculo4.getText());
+        String tipo_lujo = tipolujoVehiculo4.getText();
+        String tipo_licencia = tipoLicenciaVehiculo4.getItemAt(tipoLicenciaVehiculo4.getSelectedIndex());
+        
+        UpdateData.updateVehiculo(matricula, marca, modelo, cilindrada, anio_compra, tarifa, tipo_licencia, dni_prof, tipo_lujo, tipo_licencia);
+        
+        matriculaVehiculo4.setText("");
+        marcaVehiculo4.setText("");
+        modeloVehiculo4.setText("");
+        cilindradaVehiculo4.setText("");
+        aniocompraVehiculo4.setText("");
+        tarifaVehiculo4.setText("");
+        dniprofesorVehiculo4.setText("");
+        tipolujoVehiculo4.setText("");
+    }//GEN-LAST:event_registrarVehiculo4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1736,11 +1808,15 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTable eliminarProfesores;
     private javax.swing.JTable eliminarVehiculo;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
