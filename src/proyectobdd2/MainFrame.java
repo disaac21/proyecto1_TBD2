@@ -187,6 +187,10 @@ public class MainFrame extends javax.swing.JFrame {
         EliminarAlumnos = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        jLabel20 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel10 = new javax.swing.JPanel();
@@ -914,11 +918,19 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel19.setText("ID");
 
-        jTextField3.setText("jTextField3");
-
         jButton15.setText("Eliminar");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
         jButton16.setText("Actualiza Tabla");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout EliminarProfesoresLayout = new javax.swing.GroupLayout(EliminarProfesores);
         EliminarProfesores.setLayout(EliminarProfesoresLayout);
@@ -1254,13 +1266,30 @@ public class MainFrame extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(jTable2);
 
+        jLabel20.setText("ID");
+
+        jTextField4.setText("jTextField4");
+
+        jButton17.setText("Eliminar");
+
+        jButton18.setText("Refresacar Tabla");
+
         javax.swing.GroupLayout EliminarAlumnosLayout = new javax.swing.GroupLayout(EliminarAlumnos);
         EliminarAlumnos.setLayout(EliminarAlumnosLayout);
         EliminarAlumnosLayout.setHorizontalGroup(
             EliminarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EliminarAlumnosLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                .addGroup(EliminarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                    .addGroup(EliminarAlumnosLayout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton17)))
                 .addContainerGap())
         );
         EliminarAlumnosLayout.setVerticalGroup(
@@ -1268,7 +1297,13 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(EliminarAlumnosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(EliminarAlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton17)
+                    .addComponent(jButton18))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         AlumnosTabbedPane.addTab("Eliminar", EliminarAlumnos);
@@ -2122,6 +2157,14 @@ public class MainFrame extends javax.swing.JFrame {
         DeleteData.deleteVehiculo(borrarVehiculoTextField.getText());
     }//GEN-LAST:event_jButton14ActionPerformed
 
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        Selects.selectProfesores(eliminarProfesores);
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        DeleteData.deleteProfesor(Integer.parseInt(jTextField3.getText()));
+    }//GEN-LAST:event_jButton15ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2220,6 +2263,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -2240,6 +2285,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
@@ -2320,6 +2366,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     private javax.swing.JTable listarProfesores;
     private javax.swing.JTextField llicencia_necesaria_vechiculo3;
     private javax.swing.JLabel loginLabel;

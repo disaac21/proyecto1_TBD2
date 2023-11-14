@@ -587,7 +587,7 @@ public class Selects {
         eliminarVehiculo.setModel(model);
 
         //Llena Datos
-        String[] datos = new String[6];
+        String[] datos = new String[9];
 
         try {
             DBConnector connector = new DBConnector();
@@ -600,15 +600,15 @@ public class Selects {
             ResultSet rs = connector.getSession().execute(bsSelect);
 
             rs.forEach(rr -> {
-                datos[2] = rr.getString("matricula");
-                datos[3] = rr.getString("marca");
-                datos[4] = rr.getString("modelo");
-                datos[4] = rr.getInt("cilindrada") + "";
+                datos[0] = rr.getString("matricula");
+                datos[1] = rr.getString("marca");
+                datos[2] = rr.getString("modelo");
+                datos[3] = rr.getInt("cilindrada") + "";
                 datos[4] = rr.getDate("anio_compra") + "";
-                datos[4] = rr.getInt("tarifa") + "";
-                datos[0] = rr.getString("tipo_lic");
-                datos[1] = rr.getInt("dni_prof") + "";
-                datos[5] = rr.getString("tipo_lujo");
+                datos[5] = rr.getInt("tarifa") + "";
+                datos[6] = rr.getString("tipo_lic");
+                datos[7] = rr.getInt("dni_prof") + "";
+                datos[8] = rr.getString("tipo_lujo");
 
                 model.addRow(datos);
             });
